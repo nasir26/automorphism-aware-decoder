@@ -1,0 +1,9 @@
+line-length = 140
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E731"]
+
+[lint.isort]
+known-first-party = ["autsym", "qec", "nn", "verify", "pipeline"]

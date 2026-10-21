@@ -1,0 +1,4077 @@
+{
+ "tier": "T4-SIM",
+ "p": 0.003,
+ "rounds": "T = d",
+ "si1000": "not swept: not a built-in Stim generator",
+ "weight_digits": 9,
+ "runs": [
+  {
+   "family": "nvidia",
+   "distance": 3,
+   "rounds": 3,
+   "basis": "X",
+   "h1": {
+    "faults": 864,
+    "fault_graph_vertices": 885,
+    "fault_graph_edges": 1880,
+    "contracted_vertices": 199,
+    "mechanisms": 178,
+    "raw_dem_lines": 178,
+    "merged_dem_mechanisms": 178,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 0.0,
+    "twin_compression_ratio": 4.447236180904523,
+    "fault_compression_ratio": 4.853932584269663,
+    "log10_K": 483.826021614354,
+    "K_transpositions": 686
+   },
+   "decoding": {
+    "nodes": 21,
+    "edges": 62,
+    "bare_group_log10_order": 1.505149978319906,
+    "bare_group_order": 32,
+    "bare_vertex_orbits": 10,
+    "bare_generators": 4,
+    "decoding_graph_twin_classes": 18,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 43,
+    "distinct_weights_9": 39,
+    "sigma": "reflect_X",
+    "template_reference_round": 1,
+    "template_overlap": {
+     "0": {
+      "edges": 16,
+      "match_reference": 1
+     },
+     "1": {
+      "edges": 32,
+      "match_reference": 32
+     },
+     "2": {
+      "edges": 14,
+      "match_reference": 1
+     }
+    },
+    "bulk_rounds": [
+     1
+    ],
+    "time_layers": 3,
+    "boundary_depth_start": 1,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 62,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 19,
+      "unequal_pairs_9": 17,
+      "unequal_endpoint_rounds": {
+       "0": 18,
+       "1": 20,
+       "2": 18
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       2
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 12,
+       "coordinate_sums": {
+        "(2, 3, 3)": 12
+       },
+       "unchanged_axes": {
+        "()": 8,
+        "(0,)": 4
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       2,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 60,
+      "weight_compression_translation_and_this": 1.0333333333333334
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 11,
+      "unequal_pairs_9": 6,
+      "unequal_endpoint_rounds": {
+       "1": 8,
+       "2": 8
+      },
+      "weight_breaking_rounds": [
+       1,
+       2
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 8,
+       "coordinate_sums": {
+        "(3, 3, 3)": 8
+       },
+       "unchanged_axes": {
+        "()": 8
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 57,
+      "weight_compression_translation_and_this": 1.087719298245614
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 30,
+      "unequal_pairs_9": 23,
+      "unequal_endpoint_rounds": {
+       "0": 18,
+       "1": 28,
+       "2": 26
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       2
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 20,
+       "coordinate_sums": {
+        "(2, 3, 3)": 12,
+        "(3, 3, 3)": 8
+       },
+       "unchanged_axes": {
+        "()": 16,
+        "(0,)": 4
+       }
+      },
+      "exact_flip_on_halved_grid": false,
+      "halved_grid_flip_sums": null,
+      "weight_classes_translation_and_this": 55,
+      "weight_compression_translation_and_this": 1.1272727272727272
+     }
+    },
+    "periodic8_weighted_group_order": 64,
+    "periodic8_distinct_weights_9": 20
+   },
+   "seconds": 1.36
+  },
+  {
+   "family": "nvidia",
+   "distance": 3,
+   "rounds": 3,
+   "basis": "Z",
+   "h1": {
+    "faults": 865,
+    "fault_graph_vertices": 886,
+    "fault_graph_edges": 1880,
+    "contracted_vertices": 198,
+    "mechanisms": 177,
+    "raw_dem_lines": 177,
+    "merged_dem_mechanisms": 177,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 0.0,
+    "twin_compression_ratio": 4.474747474747475,
+    "fault_compression_ratio": 4.887005649717514,
+    "log10_K": 488.8806749567486,
+    "K_transpositions": 688
+   },
+   "decoding": {
+    "nodes": 21,
+    "edges": 62,
+    "bare_group_log10_order": 1.505149978319906,
+    "bare_group_order": 32,
+    "bare_vertex_orbits": 10,
+    "bare_generators": 4,
+    "decoding_graph_twin_classes": 18,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 45,
+    "distinct_weights_9": 43,
+    "sigma": "reflect_Z",
+    "template_reference_round": 1,
+    "template_overlap": {
+     "0": {
+      "edges": 16,
+      "match_reference": 2
+     },
+     "1": {
+      "edges": 32,
+      "match_reference": 32
+     },
+     "2": {
+      "edges": 14,
+      "match_reference": 2
+     }
+    },
+    "bulk_rounds": [
+     1
+    ],
+    "time_layers": 3,
+    "boundary_depth_start": 1,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 62,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 11,
+      "unequal_pairs_9": 5,
+      "unequal_endpoint_rounds": {
+       "1": 6,
+       "2": 6
+      },
+      "weight_breaking_rounds": [
+       1,
+       2
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 8,
+       "coordinate_sums": {
+        "(3, 3, 3)": 8
+       },
+       "unchanged_axes": {
+        "()": 8
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 56,
+      "weight_compression_translation_and_this": 1.1071428571428572
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 19,
+      "unequal_pairs_9": 17,
+      "unequal_endpoint_rounds": {
+       "0": 17,
+       "1": 22,
+       "2": 17
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       2
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 12,
+       "coordinate_sums": {
+        "(2, 3, 3)": 12
+       },
+       "unchanged_axes": {
+        "()": 8,
+        "(0,)": 4
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       2,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 60,
+      "weight_compression_translation_and_this": 1.0333333333333334
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 30,
+      "unequal_pairs_9": 22,
+      "unequal_endpoint_rounds": {
+       "0": 17,
+       "1": 28,
+       "2": 23
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       2
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 20,
+       "coordinate_sums": {
+        "(2, 3, 3)": 12,
+        "(3, 3, 3)": 8
+       },
+       "unchanged_axes": {
+        "()": 16,
+        "(0,)": 4
+       }
+      },
+      "exact_flip_on_halved_grid": false,
+      "halved_grid_flip_sums": null,
+      "weight_classes_translation_and_this": 54,
+      "weight_compression_translation_and_this": 1.1481481481481481
+     }
+    },
+    "periodic8_weighted_group_order": 64,
+    "periodic8_distinct_weights_9": 20
+   },
+   "seconds": 0.04
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "rounds": 5,
+   "basis": "X",
+   "h1": {
+    "faults": 5435,
+    "fault_graph_vertices": 5544,
+    "fault_graph_edges": 13632,
+    "contracted_vertices": 1594,
+    "mechanisms": 1485,
+    "raw_dem_lines": 1688,
+    "merged_dem_mechanisms": 1485,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 3.4780426599749057,
+    "fault_compression_ratio": 3.65993265993266,
+    "log10_K": 2499.2327345576823,
+    "K_transpositions": 3950
+   },
+   "decoding": {
+    "nodes": 109,
+    "edges": 440,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 79,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 109,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 95,
+    "distinct_weights_9": 64,
+    "sigma": "reflect_X",
+    "template_reference_round": 2,
+    "template_overlap": {
+     "0": {
+      "edges": 56,
+      "match_reference": 3
+     },
+     "1": {
+      "edges": 118,
+      "match_reference": 83
+     },
+     "2": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "3": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "4": {
+      "edges": 42,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3
+    ],
+    "time_layers": 5,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 328,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 122,
+      "unequal_pairs_9": 61,
+      "unequal_endpoint_rounds": {
+       "0": 68,
+       "1": 43,
+       "3": 43,
+       "4": 68
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       3,
+       4
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 60,
+       "coordinate_sums": {
+        "(4, 5, 5)": 60
+       },
+       "unchanged_axes": {
+        "()": 48,
+        "(0,)": 12
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       4,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 267,
+      "weight_compression_translation_and_this": 1.647940074906367
+     },
+     "reflect_Z": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.25
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "rounds": 5,
+   "basis": "Z",
+   "h1": {
+    "faults": 5436,
+    "fault_graph_vertices": 5545,
+    "fault_graph_edges": 13632,
+    "contracted_vertices": 1593,
+    "mechanisms": 1484,
+    "raw_dem_lines": 1687,
+    "merged_dem_mechanisms": 1484,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 3.4808537350910234,
+    "fault_compression_ratio": 3.6630727762803232,
+    "log10_K": 2504.287387900078,
+    "K_transpositions": 3952
+   },
+   "decoding": {
+    "nodes": 109,
+    "edges": 440,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 79,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 109,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 98,
+    "distinct_weights_9": 67,
+    "sigma": "reflect_Z",
+    "template_reference_round": 2,
+    "template_overlap": {
+     "0": {
+      "edges": 56,
+      "match_reference": 4
+     },
+     "1": {
+      "edges": 118,
+      "match_reference": 83
+     },
+     "2": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "3": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "4": {
+      "edges": 42,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3
+    ],
+    "time_layers": 5,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 328,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 122,
+      "unequal_pairs_9": 60,
+      "unequal_endpoint_rounds": {
+       "0": 67,
+       "1": 42,
+       "3": 42,
+       "4": 67
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       3,
+       4
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 60,
+       "coordinate_sums": {
+        "(4, 5, 5)": 60
+       },
+       "unchanged_axes": {
+        "()": 48,
+        "(0,)": 12
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       4,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 266,
+      "weight_compression_translation_and_this": 1.6541353383458646
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.25
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "rounds": 7,
+   "basis": "X",
+   "h1": {
+    "faults": 16734,
+    "fault_graph_vertices": 17047,
+    "fault_graph_edges": 44288,
+    "contracted_vertices": 5337,
+    "mechanisms": 5024,
+    "raw_dem_lines": 5702,
+    "merged_dem_mechanisms": 5024,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 3.1941165448753983,
+    "fault_compression_ratio": 3.330812101910828,
+    "log10_K": 7084.756765834475,
+    "K_transpositions": 11710
+   },
+   "decoding": {
+    "nodes": 313,
+    "edges": 1422,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 229,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 313,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 96,
+    "distinct_weights_9": 64,
+    "sigma": "reflect_X",
+    "template_reference_round": 3,
+    "template_overlap": {
+     "0": {
+      "edges": 120,
+      "match_reference": 5
+     },
+     "1": {
+      "edges": 256,
+      "match_reference": 185
+     },
+     "2": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "3": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "4": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "5": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "6": {
+      "edges": 86,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "time_layers": 7,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 702,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 381,
+      "unequal_pairs_9": 127,
+      "unequal_endpoint_rounds": {
+       "0": 150,
+       "1": 89,
+       "5": 89,
+       "6": 150
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       5,
+       6
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 168,
+       "coordinate_sums": {
+        "(6, 7, 7)": 168
+       },
+       "unchanged_axes": {
+        "()": 144,
+        "(0,)": 24
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       6,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 530,
+      "weight_compression_translation_and_this": 2.6830188679245284
+     },
+     "reflect_Z": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.69
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "rounds": 7,
+   "basis": "Z",
+   "h1": {
+    "faults": 16735,
+    "fault_graph_vertices": 17048,
+    "fault_graph_edges": 44288,
+    "contracted_vertices": 5336,
+    "mechanisms": 5023,
+    "raw_dem_lines": 5701,
+    "merged_dem_mechanisms": 5023,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 3.1949025487256373,
+    "fault_compression_ratio": 3.3316742982281506,
+    "log10_K": 7089.811419176869,
+    "K_transpositions": 11712
+   },
+   "decoding": {
+    "nodes": 313,
+    "edges": 1422,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 229,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 313,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 102,
+    "distinct_weights_9": 68,
+    "sigma": "reflect_Z",
+    "template_reference_round": 3,
+    "template_overlap": {
+     "0": {
+      "edges": 120,
+      "match_reference": 6
+     },
+     "1": {
+      "edges": 256,
+      "match_reference": 185
+     },
+     "2": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "3": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "4": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "5": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "6": {
+      "edges": 86,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "time_layers": 7,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 702,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 381,
+      "unequal_pairs_9": 126,
+      "unequal_endpoint_rounds": {
+       "0": 149,
+       "1": 88,
+       "5": 88,
+       "6": 149
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       5,
+       6
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 168,
+       "coordinate_sums": {
+        "(6, 7, 7)": 168
+       },
+       "unchanged_axes": {
+        "()": 144,
+        "(0,)": 24
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       6,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 529,
+      "weight_compression_translation_and_this": 2.6880907372400755
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.6
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "rounds": 9,
+   "basis": "X",
+   "h1": {
+    "faults": 37785,
+    "fault_graph_vertices": 38466,
+    "fault_graph_edges": 102872,
+    "contracted_vertices": 12580,
+    "mechanisms": 11899,
+    "raw_dem_lines": 13492,
+    "merged_dem_mechanisms": 11899,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 3.057710651828299,
+    "fault_compression_ratio": 3.175476930834524,
+    "log10_K": 15272.287884838586,
+    "K_transpositions": 25886
+   },
+   "decoding": {
+    "nodes": 681,
+    "edges": 3296,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 501,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 681,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 96,
+    "distinct_weights_9": 64,
+    "sigma": "reflect_X",
+    "template_reference_round": 4,
+    "template_overlap": {
+     "0": {
+      "edges": 208,
+      "match_reference": 7
+     },
+     "1": {
+      "edges": 446,
+      "match_reference": 327
+     },
+     "2": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "3": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "4": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "5": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "6": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "7": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "8": {
+      "edges": 146,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "time_layers": 9,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 1216,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 868,
+      "unequal_pairs_9": 217,
+      "unequal_endpoint_rounds": {
+       "0": 264,
+       "1": 151,
+       "7": 151,
+       "8": 264
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       7,
+       8
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 360,
+       "coordinate_sums": {
+        "(8, 9, 9)": 360
+       },
+       "unchanged_axes": {
+        "()": 320,
+        "(0,)": 40
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       8,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 914,
+      "weight_compression_translation_and_this": 3.6061269146608317
+     },
+     "reflect_Z": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 1.54
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "rounds": 9,
+   "basis": "Z",
+   "h1": {
+    "faults": 37786,
+    "fault_graph_vertices": 38467,
+    "fault_graph_edges": 102872,
+    "contracted_vertices": 12579,
+    "mechanisms": 11898,
+    "raw_dem_lines": 13491,
+    "merged_dem_mechanisms": 11898,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 3.0580332299864854,
+    "fault_compression_ratio": 3.175827870230291,
+    "log10_K": 15277.342538180996,
+    "K_transpositions": 25888
+   },
+   "decoding": {
+    "nodes": 681,
+    "edges": 3296,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 501,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 681,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 102,
+    "distinct_weights_9": 68,
+    "sigma": "reflect_Z",
+    "template_reference_round": 4,
+    "template_overlap": {
+     "0": {
+      "edges": 208,
+      "match_reference": 8
+     },
+     "1": {
+      "edges": 446,
+      "match_reference": 327
+     },
+     "2": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "3": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "4": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "5": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "6": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "7": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "8": {
+      "edges": 146,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "time_layers": 9,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 1216,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 868,
+      "unequal_pairs_9": 216,
+      "unequal_endpoint_rounds": {
+       "0": 263,
+       "1": 150,
+       "7": 150,
+       "8": 263
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       7,
+       8
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 360,
+       "coordinate_sums": {
+        "(8, 9, 9)": 360
+       },
+       "unchanged_axes": {
+        "()": 320,
+        "(0,)": 40
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       8,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 913,
+      "weight_compression_translation_and_this": 3.610076670317634
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 1.55
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "rounds": 11,
+   "basis": "X",
+   "h1": {
+    "faults": 71612,
+    "fault_graph_vertices": 72873,
+    "fault_graph_edges": 198408,
+    "contracted_vertices": 24475,
+    "mechanisms": 23214,
+    "raw_dem_lines": 26306,
+    "merged_dem_mechanisms": 23214,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 2.977446373850868,
+    "fault_compression_ratio": 3.0848625829240977,
+    "log10_K": 28093.715860959375,
+    "K_transpositions": 48398
+   },
+   "decoding": {
+    "nodes": 1261,
+    "edges": 6350,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 931,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 1261,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 96,
+    "distinct_weights_9": 64,
+    "sigma": "reflect_X",
+    "template_reference_round": 5,
+    "template_overlap": {
+     "0": {
+      "edges": 320,
+      "match_reference": 9
+     },
+     "1": {
+      "edges": 688,
+      "match_reference": 509
+     },
+     "2": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "3": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "4": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "5": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "6": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "7": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "8": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "9": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "10": {
+      "edges": 222,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "time_layers": 11,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 1870,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 1655,
+      "unequal_pairs_9": 331,
+      "unequal_endpoint_rounds": {
+       "0": 410,
+       "1": 229,
+       "9": 229,
+       "10": 410
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       9,
+       10
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 660,
+       "coordinate_sums": {
+        "(10, 11, 11)": 660
+       },
+       "unchanged_axes": {
+        "()": 600,
+        "(0,)": 60
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       10,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1402,
+      "weight_compression_translation_and_this": 4.529243937232525
+     },
+     "reflect_Z": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 3.08
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "rounds": 11,
+   "basis": "Z",
+   "h1": {
+    "faults": 71613,
+    "fault_graph_vertices": 72874,
+    "fault_graph_edges": 198408,
+    "contracted_vertices": 24474,
+    "mechanisms": 23213,
+    "raw_dem_lines": 26305,
+    "merged_dem_mechanisms": 23213,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 2.9776088910680722,
+    "fault_compression_ratio": 3.085038555981562,
+    "log10_K": 28098.77051430179,
+    "K_transpositions": 48400
+   },
+   "decoding": {
+    "nodes": 1261,
+    "edges": 6350,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 931,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 1261,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 102,
+    "distinct_weights_9": 68,
+    "sigma": "reflect_Z",
+    "template_reference_round": 5,
+    "template_overlap": {
+     "0": {
+      "edges": 320,
+      "match_reference": 10
+     },
+     "1": {
+      "edges": 688,
+      "match_reference": 509
+     },
+     "2": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "3": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "4": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "5": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "6": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "7": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "8": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "9": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "10": {
+      "edges": 222,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "time_layers": 11,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 1870,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 1655,
+      "unequal_pairs_9": 330,
+      "unequal_endpoint_rounds": {
+       "0": 409,
+       "1": 228,
+       "9": 228,
+       "10": 409
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       9,
+       10
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 660,
+       "coordinate_sums": {
+        "(10, 11, 11)": 660
+       },
+       "unchanged_axes": {
+        "()": 600,
+        "(0,)": 60
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       10,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1401,
+      "weight_compression_translation_and_this": 4.532476802284083
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 2.83
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "rounds": 13,
+   "basis": "X",
+   "h1": {
+    "faults": 121239,
+    "fault_graph_vertices": 123340,
+    "fault_graph_edges": 339920,
+    "contracted_vertices": 42174,
+    "mechanisms": 40073,
+    "raw_dem_lines": 45392,
+    "merged_dem_mechanisms": 40073,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 2.9245506710295444,
+    "fault_compression_ratio": 3.025453547276221,
+    "log10_K": 46580.93046359532,
+    "K_transpositions": 81166
+   },
+   "decoding": {
+    "nodes": 2101,
+    "edges": 10872,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 1555,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 2101,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 96,
+    "distinct_weights_9": 64,
+    "sigma": "reflect_X",
+    "template_reference_round": 6,
+    "template_overlap": {
+     "0": {
+      "edges": 456,
+      "match_reference": 11
+     },
+     "1": {
+      "edges": 982,
+      "match_reference": 731
+     },
+     "2": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "3": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "4": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "5": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "6": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "7": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "8": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "9": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "10": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "11": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "12": {
+      "edges": 314,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "time_layers": 13,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 2664,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 2814,
+      "unequal_pairs_9": 469,
+      "unequal_endpoint_rounds": {
+       "0": 588,
+       "1": 323,
+       "11": 323,
+       "12": 588
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       11,
+       12
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1092,
+       "coordinate_sums": {
+        "(12, 13, 13)": 1092
+       },
+       "unchanged_axes": {
+        "()": 1008,
+        "(0,)": 84
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       12,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 1994,
+      "weight_compression_translation_and_this": 5.452357071213641
+     },
+     "reflect_Z": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 5.1
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "rounds": 13,
+   "basis": "Z",
+   "h1": {
+    "faults": 121240,
+    "fault_graph_vertices": 123341,
+    "fault_graph_edges": 339920,
+    "contracted_vertices": 42173,
+    "mechanisms": 40072,
+    "raw_dem_lines": 45391,
+    "merged_dem_mechanisms": 40072,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.751172022367762e-16,
+    "twin_compression_ratio": 2.9246437294003274,
+    "fault_compression_ratio": 3.025554002794969,
+    "log10_K": 46585.98511693773,
+    "K_transpositions": 81168
+   },
+   "decoding": {
+    "nodes": 2101,
+    "edges": 10872,
+    "bare_group_log10_order": 0.3010299956639812,
+    "bare_group_order": 2,
+    "bare_vertex_orbits": 1555,
+    "bare_generators": 1,
+    "decoding_graph_twin_classes": 2101,
+    "weighted_group_order_9": 1,
+    "distinct_weights_exact": 102,
+    "distinct_weights_9": 68,
+    "sigma": "reflect_Z",
+    "template_reference_round": 6,
+    "template_overlap": {
+     "0": {
+      "edges": 456,
+      "match_reference": 12
+     },
+     "1": {
+      "edges": 982,
+      "match_reference": 731
+     },
+     "2": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "3": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "4": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "5": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "6": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "7": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "8": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "9": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "10": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "11": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "12": {
+      "edges": 314,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "time_layers": 13,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 1,
+    "weight_classes_translation": 2664,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 2814,
+      "unequal_pairs_9": 468,
+      "unequal_endpoint_rounds": {
+       "0": 587,
+       "1": 322,
+       "11": 322,
+       "12": 587
+      },
+      "weight_breaking_rounds": [
+       0,
+       1,
+       11,
+       12
+      ],
+      "breaking_depth_start": 2,
+      "breaking_depth_end": 2,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1092,
+       "coordinate_sums": {
+        "(12, 13, 13)": 1092
+       },
+       "unchanged_axes": {
+        "()": 1008,
+        "(0,)": 84
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       12,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 1993,
+      "weight_compression_translation_and_this": 5.455092824887105
+     },
+     "reflect_both": {
+      "automorphism": false,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 5.08
+  },
+  {
+   "family": "stim",
+   "distance": 3,
+   "rounds": 3,
+   "basis": "X",
+   "h1": {
+    "faults": 1166,
+    "fault_graph_vertices": 1191,
+    "fault_graph_edges": 2512,
+    "contracted_vertices": 246,
+    "mechanisms": 221,
+    "raw_dem_lines": 221,
+    "merged_dem_mechanisms": 221,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 0.0,
+    "twin_compression_ratio": 4.841463414634147,
+    "fault_compression_ratio": 5.276018099547511,
+    "log10_K": 682.8657283556854,
+    "K_transpositions": 945
+   },
+   "decoding": {
+    "nodes": 25,
+    "edges": 78,
+    "bare_group_log10_order": 1.505149978319906,
+    "bare_group_order": 32,
+    "bare_vertex_orbits": 12,
+    "bare_generators": 4,
+    "decoding_graph_twin_classes": 22,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 42,
+    "distinct_weights_9": 30,
+    "sigma": "reflect_X",
+    "template_reference_round": 1,
+    "template_overlap": {
+     "0": {
+      "edges": 16,
+      "match_reference": 9
+     },
+     "1": {
+      "edges": 32,
+      "match_reference": 32
+     },
+     "2": {
+      "edges": 23,
+      "match_reference": 17
+     },
+     "3": {
+      "edges": 7,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     1
+    ],
+    "time_layers": 4,
+    "boundary_depth_start": 1,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 78,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 27,
+      "unequal_pairs_9": 7,
+      "unequal_endpoint_rounds": {
+       "0": 10,
+       "3": 10
+      },
+      "weight_breaking_rounds": [
+       0,
+       3
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 16,
+       "coordinate_sums": {
+        "(3, 3, 3)": 16
+       },
+       "unchanged_axes": {
+        "()": 16
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 58,
+      "weight_compression_translation_and_this": 1.3448275862068966
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 11,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 8,
+       "coordinate_sums": {
+        "(3, 3, 3)": 8
+       },
+       "unchanged_axes": {
+        "()": 8
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 67,
+      "weight_compression_translation_and_this": 1.164179104477612
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 38,
+      "unequal_pairs_9": 7,
+      "unequal_endpoint_rounds": {
+       "0": 10,
+       "3": 10
+      },
+      "weight_breaking_rounds": [
+       0,
+       3
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 24,
+       "coordinate_sums": {
+        "(3, 3, 3)": 24
+       },
+       "unchanged_axes": {
+        "()": 24
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 47,
+      "weight_compression_translation_and_this": 1.6595744680851063
+     }
+    },
+    "periodic8_weighted_group_order": 128,
+    "periodic8_distinct_weights_9": 18
+   },
+   "seconds": 0.04
+  },
+  {
+   "family": "stim",
+   "distance": 3,
+   "rounds": 3,
+   "basis": "Z",
+   "h1": {
+    "faults": 1166,
+    "fault_graph_vertices": 1191,
+    "fault_graph_edges": 2480,
+    "contracted_vertices": 244,
+    "mechanisms": 219,
+    "raw_dem_lines": 219,
+    "merged_dem_mechanisms": 219,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 0.0,
+    "twin_compression_ratio": 4.881147540983607,
+    "fault_compression_ratio": 5.324200913242009,
+    "log10_K": 696.722100721979,
+    "K_transpositions": 947
+   },
+   "decoding": {
+    "nodes": 25,
+    "edges": 78,
+    "bare_group_log10_order": 1.505149978319906,
+    "bare_group_order": 32,
+    "bare_vertex_orbits": 12,
+    "bare_generators": 4,
+    "decoding_graph_twin_classes": 22,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 41,
+    "distinct_weights_9": 24,
+    "sigma": "reflect_Z",
+    "template_reference_round": 1,
+    "template_overlap": {
+     "0": {
+      "edges": 16,
+      "match_reference": 9
+     },
+     "1": {
+      "edges": 32,
+      "match_reference": 32
+     },
+     "2": {
+      "edges": 23,
+      "match_reference": 21
+     },
+     "3": {
+      "edges": 7,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     1
+    ],
+    "time_layers": 4,
+    "boundary_depth_start": 1,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 78,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 11,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 8,
+       "coordinate_sums": {
+        "(3, 3, 3)": 8
+       },
+       "unchanged_axes": {
+        "()": 8
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 67,
+      "weight_compression_translation_and_this": 1.164179104477612
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 27,
+      "unequal_pairs_9": 7,
+      "unequal_endpoint_rounds": {
+       "0": 10,
+       "3": 10
+      },
+      "weight_breaking_rounds": [
+       0,
+       3
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 16,
+       "coordinate_sums": {
+        "(3, 3, 3)": 16
+       },
+       "unchanged_axes": {
+        "()": 16
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 58,
+      "weight_compression_translation_and_this": 1.3448275862068966
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 38,
+      "unequal_pairs_9": 7,
+      "unequal_endpoint_rounds": {
+       "0": 10,
+       "3": 10
+      },
+      "weight_breaking_rounds": [
+       0,
+       3
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 24,
+       "coordinate_sums": {
+        "(3, 3, 3)": 24
+       },
+       "unchanged_axes": {
+        "()": 24
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       3,
+       3,
+       3
+      ],
+      "weight_classes_translation_and_this": 47,
+      "weight_compression_translation_and_this": 1.6595744680851063
+     }
+    },
+    "periodic8_weighted_group_order": 128,
+    "periodic8_distinct_weights_9": 16
+   },
+   "seconds": 0.04
+  },
+  {
+   "family": "stim",
+   "distance": 5,
+   "rounds": 5,
+   "basis": "X",
+   "h1": {
+    "faults": 6492,
+    "fault_graph_vertices": 6613,
+    "fault_graph_edges": 15972,
+    "contracted_vertices": 1800,
+    "mechanisms": 1679,
+    "raw_dem_lines": 1679,
+    "merged_dem_mechanisms": 1679,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 0.0,
+    "twin_compression_ratio": 3.673888888888889,
+    "fault_compression_ratio": 3.8665872543180466,
+    "log10_K": 3143.2386325471425,
+    "K_transpositions": 4813
+   },
+   "decoding": {
+    "nodes": 121,
+    "edges": 502,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 61,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 121,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 72,
+    "distinct_weights_9": 40,
+    "sigma": "reflect_X",
+    "template_reference_round": 2,
+    "template_overlap": {
+     "0": {
+      "edges": 56,
+      "match_reference": 35
+     },
+     "1": {
+      "edges": 118,
+      "match_reference": 91
+     },
+     "2": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "3": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "4": {
+      "edges": 83,
+      "match_reference": 56
+     },
+     "5": {
+      "edges": 21,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3
+    ],
+    "time_layers": 6,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 390,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 150,
+      "unequal_pairs_9": 21,
+      "unequal_endpoint_rounds": {
+       "0": 36,
+       "5": 36
+      },
+      "weight_breaking_rounds": [
+       0,
+       5
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 72,
+       "coordinate_sums": {
+        "(5, 5, 5)": 72
+       },
+       "unchanged_axes": {
+        "()": 72
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       5,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 272,
+      "weight_compression_translation_and_this": 1.8455882352941178
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 100,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 48,
+       "coordinate_sums": {
+        "(5, 5, 5)": 48
+       },
+       "unchanged_axes": {
+        "()": 48
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       5,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 301,
+      "weight_compression_translation_and_this": 1.6677740863787376
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 250,
+      "unequal_pairs_9": 21,
+      "unequal_endpoint_rounds": {
+       "0": 36,
+       "5": 36
+      },
+      "weight_breaking_rounds": [
+       0,
+       5
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 120,
+       "coordinate_sums": {
+        "(5, 5, 5)": 120
+       },
+       "unchanged_axes": {
+        "()": 120
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       5,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 183,
+      "weight_compression_translation_and_this": 2.7431693989071038
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.17
+  },
+  {
+   "family": "stim",
+   "distance": 5,
+   "rounds": 5,
+   "basis": "Z",
+   "h1": {
+    "faults": 6492,
+    "fault_graph_vertices": 6613,
+    "fault_graph_edges": 15876,
+    "contracted_vertices": 1798,
+    "mechanisms": 1677,
+    "raw_dem_lines": 1677,
+    "merged_dem_mechanisms": 1677,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 0.0,
+    "twin_compression_ratio": 3.6779755283648496,
+    "fault_compression_ratio": 3.8711985688729875,
+    "log10_K": 3169.8507194312774,
+    "K_transpositions": 4815
+   },
+   "decoding": {
+    "nodes": 121,
+    "edges": 502,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 61,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 121,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 69,
+    "distinct_weights_9": 38,
+    "sigma": "reflect_Z",
+    "template_reference_round": 2,
+    "template_overlap": {
+     "0": {
+      "edges": 56,
+      "match_reference": 35
+     },
+     "1": {
+      "edges": 118,
+      "match_reference": 91
+     },
+     "2": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "3": {
+      "edges": 112,
+      "match_reference": 112
+     },
+     "4": {
+      "edges": 83,
+      "match_reference": 56
+     },
+     "5": {
+      "edges": 21,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3
+    ],
+    "time_layers": 6,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 390,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 100,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 48,
+       "coordinate_sums": {
+        "(5, 5, 5)": 48
+       },
+       "unchanged_axes": {
+        "()": 48
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       5,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 301,
+      "weight_compression_translation_and_this": 1.6677740863787376
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 150,
+      "unequal_pairs_9": 21,
+      "unequal_endpoint_rounds": {
+       "0": 36,
+       "5": 36
+      },
+      "weight_breaking_rounds": [
+       0,
+       5
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 72,
+       "coordinate_sums": {
+        "(5, 5, 5)": 72
+       },
+       "unchanged_axes": {
+        "()": 72
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       5,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 272,
+      "weight_compression_translation_and_this": 1.8455882352941178
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 250,
+      "unequal_pairs_9": 21,
+      "unequal_endpoint_rounds": {
+       "0": 36,
+       "5": 36
+      },
+      "weight_breaking_rounds": [
+       0,
+       5
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 120,
+       "coordinate_sums": {
+        "(5, 5, 5)": 120
+       },
+       "unchanged_axes": {
+        "()": 120
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       5,
+       5,
+       5
+      ],
+      "weight_classes_translation_and_this": 183,
+      "weight_compression_translation_and_this": 2.7431693989071038
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.23
+  },
+  {
+   "family": "stim",
+   "distance": 7,
+   "rounds": 7,
+   "basis": "X",
+   "h1": {
+    "faults": 19098,
+    "fault_graph_vertices": 19435,
+    "fault_graph_edges": 49592,
+    "contracted_vertices": 5810,
+    "mechanisms": 5473,
+    "raw_dem_lines": 6025,
+    "merged_dem_mechanisms": 5473,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.3450946643717727,
+    "fault_compression_ratio": 3.4894938790425725,
+    "log10_K": 8524.54110829476,
+    "K_transpositions": 13625
+   },
+   "decoding": {
+    "nodes": 337,
+    "edges": 1558,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 169,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 337,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 80,
+    "distinct_weights_9": 40,
+    "sigma": "reflect_X",
+    "template_reference_round": 3,
+    "template_overlap": {
+     "0": {
+      "edges": 120,
+      "match_reference": 77
+     },
+     "1": {
+      "edges": 256,
+      "match_reference": 197
+     },
+     "2": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "3": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "4": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "5": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "6": {
+      "edges": 179,
+      "match_reference": 120
+     },
+     "7": {
+      "edges": 43,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "time_layers": 8,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 838,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 441,
+      "unequal_pairs_9": 43,
+      "unequal_endpoint_rounds": {
+       "0": 78,
+       "7": 78
+      },
+      "weight_breaking_rounds": [
+       0,
+       7
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 192,
+       "coordinate_sums": {
+        "(7, 7, 7)": 192
+       },
+       "unchanged_axes": {
+        "()": 192
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       7,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 582,
+      "weight_compression_translation_and_this": 2.676975945017182
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 337,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 144,
+       "coordinate_sums": {
+        "(7, 7, 7)": 144
+       },
+       "unchanged_axes": {
+        "()": 144
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       7,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 643,
+      "weight_compression_translation_and_this": 2.423017107309487
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 778,
+      "unequal_pairs_9": 43,
+      "unequal_endpoint_rounds": {
+       "0": 78,
+       "7": 78
+      },
+      "weight_breaking_rounds": [
+       0,
+       7
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 336,
+       "coordinate_sums": {
+        "(7, 7, 7)": 336
+       },
+       "unchanged_axes": {
+        "()": 336
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       7,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 387,
+      "weight_compression_translation_and_this": 4.025839793281654
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.62
+  },
+  {
+   "family": "stim",
+   "distance": 7,
+   "rounds": 7,
+   "basis": "Z",
+   "h1": {
+    "faults": 19098,
+    "fault_graph_vertices": 19435,
+    "fault_graph_edges": 49400,
+    "contracted_vertices": 5808,
+    "mechanisms": 5471,
+    "raw_dem_lines": 6023,
+    "merged_dem_mechanisms": 5471,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.346246556473829,
+    "fault_compression_ratio": 3.4907695119722173,
+    "log10_K": 8569.691915961945,
+    "K_transpositions": 13627
+   },
+   "decoding": {
+    "nodes": 337,
+    "edges": 1558,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 169,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 337,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 75,
+    "distinct_weights_9": 38,
+    "sigma": "reflect_Z",
+    "template_reference_round": 3,
+    "template_overlap": {
+     "0": {
+      "edges": 120,
+      "match_reference": 77
+     },
+     "1": {
+      "edges": 256,
+      "match_reference": 197
+     },
+     "2": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "3": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "4": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "5": {
+      "edges": 240,
+      "match_reference": 240
+     },
+     "6": {
+      "edges": 179,
+      "match_reference": 120
+     },
+     "7": {
+      "edges": 43,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "time_layers": 8,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 838,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 337,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 144,
+       "coordinate_sums": {
+        "(7, 7, 7)": 144
+       },
+       "unchanged_axes": {
+        "()": 144
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       7,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 643,
+      "weight_compression_translation_and_this": 2.423017107309487
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 441,
+      "unequal_pairs_9": 43,
+      "unequal_endpoint_rounds": {
+       "0": 78,
+       "7": 78
+      },
+      "weight_breaking_rounds": [
+       0,
+       7
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 192,
+       "coordinate_sums": {
+        "(7, 7, 7)": 192
+       },
+       "unchanged_axes": {
+        "()": 192
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       7,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 582,
+      "weight_compression_translation_and_this": 2.676975945017182
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 778,
+      "unequal_pairs_9": 43,
+      "unequal_endpoint_rounds": {
+       "0": 78,
+       "7": 78
+      },
+      "weight_breaking_rounds": [
+       0,
+       7
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 336,
+       "coordinate_sums": {
+        "(7, 7, 7)": 336
+       },
+       "unchanged_axes": {
+        "()": 336
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       7,
+       7,
+       7
+      ],
+      "weight_classes_translation_and_this": 387,
+      "weight_compression_translation_and_this": 4.025839793281654
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 0.62
+  },
+  {
+   "family": "stim",
+   "distance": 9,
+   "rounds": 9,
+   "basis": "X",
+   "h1": {
+    "faults": 42104,
+    "fault_graph_vertices": 42825,
+    "fault_graph_edges": 112588,
+    "contracted_vertices": 13428,
+    "mechanisms": 12707,
+    "raw_dem_lines": 13939,
+    "merged_dem_mechanisms": 12707,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.1892314566577302,
+    "fault_compression_ratio": 3.313449279924451,
+    "log10_K": 17956.458519567226,
+    "K_transpositions": 29397
+   },
+   "decoding": {
+    "nodes": 721,
+    "edges": 3534,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 361,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 721,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 80,
+    "distinct_weights_9": 40,
+    "sigma": "reflect_X",
+    "template_reference_round": 4,
+    "template_overlap": {
+     "0": {
+      "edges": 208,
+      "match_reference": 135
+     },
+     "1": {
+      "edges": 446,
+      "match_reference": 343
+     },
+     "2": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "3": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "4": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "5": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "6": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "7": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "8": {
+      "edges": 311,
+      "match_reference": 208
+     },
+     "9": {
+      "edges": 73,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "time_layers": 10,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 1454,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 972,
+      "unequal_pairs_9": 73,
+      "unequal_endpoint_rounds": {
+       "0": 136,
+       "9": 136
+      },
+      "weight_breaking_rounds": [
+       0,
+       9
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 400,
+       "coordinate_sums": {
+        "(9, 9, 9)": 400
+       },
+       "unchanged_axes": {
+        "()": 400
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       9,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 1008,
+      "weight_compression_translation_and_this": 3.505952380952381
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 794,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 320,
+       "coordinate_sums": {
+        "(9, 9, 9)": 320
+       },
+       "unchanged_axes": {
+        "()": 320
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       9,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 1113,
+      "weight_compression_translation_and_this": 3.175202156334232
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 1766,
+      "unequal_pairs_9": 73,
+      "unequal_endpoint_rounds": {
+       "0": 136,
+       "9": 136
+      },
+      "weight_breaking_rounds": [
+       0,
+       9
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 720,
+       "coordinate_sums": {
+        "(9, 9, 9)": 720
+       },
+       "unchanged_axes": {
+        "()": 720
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       9,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 667,
+      "weight_compression_translation_and_this": 5.298350824587706
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 1.34
+  },
+  {
+   "family": "stim",
+   "distance": 9,
+   "rounds": 9,
+   "basis": "Z",
+   "h1": {
+    "faults": 42104,
+    "fault_graph_vertices": 42825,
+    "fault_graph_edges": 112268,
+    "contracted_vertices": 13426,
+    "mechanisms": 12705,
+    "raw_dem_lines": 13937,
+    "merged_dem_mechanisms": 12705,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.1897065395501265,
+    "fault_compression_ratio": 3.3139708776072414,
+    "log10_K": 18025.98070145024,
+    "K_transpositions": 29399
+   },
+   "decoding": {
+    "nodes": 721,
+    "edges": 3534,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 361,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 721,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 75,
+    "distinct_weights_9": 38,
+    "sigma": "reflect_Z",
+    "template_reference_round": 4,
+    "template_overlap": {
+     "0": {
+      "edges": 208,
+      "match_reference": 135
+     },
+     "1": {
+      "edges": 446,
+      "match_reference": 343
+     },
+     "2": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "3": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "4": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "5": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "6": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "7": {
+      "edges": 416,
+      "match_reference": 416
+     },
+     "8": {
+      "edges": 311,
+      "match_reference": 208
+     },
+     "9": {
+      "edges": 73,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "time_layers": 10,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 1454,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 794,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 320,
+       "coordinate_sums": {
+        "(9, 9, 9)": 320
+       },
+       "unchanged_axes": {
+        "()": 320
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       9,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 1113,
+      "weight_compression_translation_and_this": 3.175202156334232
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 972,
+      "unequal_pairs_9": 73,
+      "unequal_endpoint_rounds": {
+       "0": 136,
+       "9": 136
+      },
+      "weight_breaking_rounds": [
+       0,
+       9
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 400,
+       "coordinate_sums": {
+        "(9, 9, 9)": 400
+       },
+       "unchanged_axes": {
+        "()": 400
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       9,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 1008,
+      "weight_compression_translation_and_this": 3.505952380952381
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 1766,
+      "unequal_pairs_9": 73,
+      "unequal_endpoint_rounds": {
+       "0": 136,
+       "9": 136
+      },
+      "weight_breaking_rounds": [
+       0,
+       9
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 720,
+       "coordinate_sums": {
+        "(9, 9, 9)": 720
+       },
+       "unchanged_axes": {
+        "()": 720
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       9,
+       9,
+       9
+      ],
+      "weight_classes_translation_and_this": 667,
+      "weight_compression_translation_and_this": 5.298350824587706
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 1.45
+  },
+  {
+   "family": "stim",
+   "distance": 11,
+   "rounds": 11,
+   "basis": "X",
+   "h1": {
+    "faults": 78630,
+    "fault_graph_vertices": 79951,
+    "fault_graph_edges": 214176,
+    "contracted_vertices": 25806,
+    "mechanisms": 24485,
+    "raw_dem_lines": 26805,
+    "merged_dem_mechanisms": 24485,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.098155467720685,
+    "fault_compression_ratio": 3.2113538901368184,
+    "log10_K": 32568.67623033078,
+    "K_transpositions": 54145
+   },
+   "decoding": {
+    "nodes": 1321,
+    "edges": 6718,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 661,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 1321,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 80,
+    "distinct_weights_9": 40,
+    "sigma": "reflect_X",
+    "template_reference_round": 5,
+    "template_overlap": {
+     "0": {
+      "edges": 320,
+      "match_reference": 209
+     },
+     "1": {
+      "edges": 688,
+      "match_reference": 529
+     },
+     "2": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "3": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "4": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "5": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "6": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "7": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "8": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "9": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "10": {
+      "edges": 479,
+      "match_reference": 320
+     },
+     "11": {
+      "edges": 111,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "time_layers": 12,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 2238,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 1815,
+      "unequal_pairs_9": 111,
+      "unequal_endpoint_rounds": {
+       "0": 210,
+       "11": 210
+      },
+      "weight_breaking_rounds": [
+       0,
+       11
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 720,
+       "coordinate_sums": {
+        "(11, 11, 11)": 720
+       },
+       "unchanged_axes": {
+        "()": 720
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       11,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1550,
+      "weight_compression_translation_and_this": 4.334193548387097
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 1543,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 600,
+       "coordinate_sums": {
+        "(11, 11, 11)": 600
+       },
+       "unchanged_axes": {
+        "()": 600
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       11,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1711,
+      "weight_compression_translation_and_this": 3.9263588544710695
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 3358,
+      "unequal_pairs_9": 111,
+      "unequal_endpoint_rounds": {
+       "0": 210,
+       "11": 210
+      },
+      "weight_breaking_rounds": [
+       0,
+       11
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1320,
+       "coordinate_sums": {
+        "(11, 11, 11)": 1320
+       },
+       "unchanged_axes": {
+        "()": 1320
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       11,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1023,
+      "weight_compression_translation_and_this": 6.566959921798632
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 2.62
+  },
+  {
+   "family": "stim",
+   "distance": 11,
+   "rounds": 11,
+   "basis": "Z",
+   "h1": {
+    "faults": 78630,
+    "fault_graph_vertices": 79951,
+    "fault_graph_edges": 213696,
+    "contracted_vertices": 25804,
+    "mechanisms": 24483,
+    "raw_dem_lines": 26803,
+    "merged_dem_mechanisms": 24483,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.0983955975817703,
+    "fault_compression_ratio": 3.211616223502022,
+    "log10_K": 32668.40243986215,
+    "K_transpositions": 54147
+   },
+   "decoding": {
+    "nodes": 1321,
+    "edges": 6718,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 661,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 1321,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 75,
+    "distinct_weights_9": 38,
+    "sigma": "reflect_Z",
+    "template_reference_round": 5,
+    "template_overlap": {
+     "0": {
+      "edges": 320,
+      "match_reference": 209
+     },
+     "1": {
+      "edges": 688,
+      "match_reference": 529
+     },
+     "2": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "3": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "4": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "5": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "6": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "7": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "8": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "9": {
+      "edges": 640,
+      "match_reference": 640
+     },
+     "10": {
+      "edges": 479,
+      "match_reference": 320
+     },
+     "11": {
+      "edges": 111,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "time_layers": 12,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 2238,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 1543,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 600,
+       "coordinate_sums": {
+        "(11, 11, 11)": 600
+       },
+       "unchanged_axes": {
+        "()": 600
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       11,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1711,
+      "weight_compression_translation_and_this": 3.9263588544710695
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 1815,
+      "unequal_pairs_9": 111,
+      "unequal_endpoint_rounds": {
+       "0": 210,
+       "11": 210
+      },
+      "weight_breaking_rounds": [
+       0,
+       11
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 720,
+       "coordinate_sums": {
+        "(11, 11, 11)": 720
+       },
+       "unchanged_axes": {
+        "()": 720
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       11,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1550,
+      "weight_compression_translation_and_this": 4.334193548387097
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 3358,
+      "unequal_pairs_9": 111,
+      "unequal_endpoint_rounds": {
+       "0": 210,
+       "11": 210
+      },
+      "weight_breaking_rounds": [
+       0,
+       11
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1320,
+       "coordinate_sums": {
+        "(11, 11, 11)": 1320
+       },
+       "unchanged_axes": {
+        "()": 1320
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       11,
+       11,
+       11
+      ],
+      "weight_classes_translation_and_this": 1023,
+      "weight_compression_translation_and_this": 6.566959921798632
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 2.71
+  },
+  {
+   "family": "stim",
+   "distance": 13,
+   "rounds": 13,
+   "basis": "X",
+   "h1": {
+    "faults": 131796,
+    "fault_graph_vertices": 133981,
+    "fault_graph_edges": 363572,
+    "contracted_vertices": 44096,
+    "mechanisms": 41911,
+    "raw_dem_lines": 45823,
+    "merged_dem_mechanisms": 41911,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.0383935050798256,
+    "fault_compression_ratio": 3.14466369210947,
+    "log10_K": 53490.879604557485,
+    "K_transpositions": 89885
+   },
+   "decoding": {
+    "nodes": 2185,
+    "edges": 11398,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 1093,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 2185,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 80,
+    "distinct_weights_9": 40,
+    "sigma": "reflect_X",
+    "template_reference_round": 6,
+    "template_overlap": {
+     "0": {
+      "edges": 456,
+      "match_reference": 299
+     },
+     "1": {
+      "edges": 982,
+      "match_reference": 755
+     },
+     "2": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "3": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "4": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "5": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "6": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "7": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "8": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "9": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "10": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "11": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "12": {
+      "edges": 683,
+      "match_reference": 456
+     },
+     "13": {
+      "edges": 157,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "time_layers": 14,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 3190,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 3042,
+      "unequal_pairs_9": 157,
+      "unequal_endpoint_rounds": {
+       "0": 300,
+       "13": 300
+      },
+      "weight_breaking_rounds": [
+       0,
+       13
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1176,
+       "coordinate_sums": {
+        "(13, 13, 13)": 1176
+       },
+       "unchanged_axes": {
+        "()": 1176
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       13,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 2208,
+      "weight_compression_translation_and_this": 5.16213768115942
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 2656,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1008,
+       "coordinate_sums": {
+        "(13, 13, 13)": 1008
+       },
+       "unchanged_axes": {
+        "()": 1008
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       13,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 2437,
+      "weight_compression_translation_and_this": 4.677061961427985
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 5698,
+      "unequal_pairs_9": 157,
+      "unequal_endpoint_rounds": {
+       "0": 300,
+       "13": 300
+      },
+      "weight_breaking_rounds": [
+       0,
+       13
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 2184,
+       "coordinate_sums": {
+        "(13, 13, 13)": 2184
+       },
+       "unchanged_axes": {
+        "()": 2184
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       13,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 1455,
+      "weight_compression_translation_and_this": 7.833676975945017
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 4.68
+  },
+  {
+   "family": "stim",
+   "distance": 13,
+   "rounds": 13,
+   "basis": "Z",
+   "h1": {
+    "faults": 131796,
+    "fault_graph_vertices": 133981,
+    "fault_graph_edges": 362900,
+    "contracted_vertices": 44094,
+    "mechanisms": 41909,
+    "raw_dem_lines": 45821,
+    "merged_dem_mechanisms": 41909,
+    "mechanisms_equal_merged_dem_exact": true,
+    "every_class_one_footprint": true,
+    "classes_mixing_faults_and_detectors": 0,
+    "detector_or_observable_twin_classes": 0,
+    "max_rel_probability_difference": 4.1402657194840836e-16,
+    "twin_compression_ratio": 3.038531319453894,
+    "fault_compression_ratio": 3.144813763153499,
+    "log10_K": 53626.642495169996,
+    "K_transpositions": 89887
+   },
+   "decoding": {
+    "nodes": 2185,
+    "edges": 11398,
+    "bare_group_log10_order": 0.6020599913279624,
+    "bare_group_order": 4,
+    "bare_vertex_orbits": 1093,
+    "bare_generators": 2,
+    "decoding_graph_twin_classes": 2185,
+    "weighted_group_order_9": 2,
+    "distinct_weights_exact": 75,
+    "distinct_weights_9": 38,
+    "sigma": "reflect_Z",
+    "template_reference_round": 6,
+    "template_overlap": {
+     "0": {
+      "edges": 456,
+      "match_reference": 299
+     },
+     "1": {
+      "edges": 982,
+      "match_reference": 755
+     },
+     "2": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "3": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "4": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "5": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "6": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "7": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "8": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "9": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "10": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "11": {
+      "edges": 912,
+      "match_reference": 912
+     },
+     "12": {
+      "edges": 683,
+      "match_reference": 456
+     },
+     "13": {
+      "edges": 157,
+      "match_reference": 0
+     }
+    },
+    "bulk_rounds": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "time_layers": 14,
+    "boundary_depth_start": 2,
+    "boundary_depth_end": 2,
+    "weight_classes_translation": 3190,
+    "reflections": {
+     "reflect_X": {
+      "automorphism": true,
+      "automorphism_weighted_9": true,
+      "preserves_observable_masks": true,
+      "swapped_pairs": 2656,
+      "unequal_pairs_9": 0,
+      "unequal_endpoint_rounds": {},
+      "weight_breaking_rounds": [],
+      "breaking_depth_start": 0,
+      "breaking_depth_end": 0,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1008,
+       "coordinate_sums": {
+        "(13, 13, 13)": 1008
+       },
+       "unchanged_axes": {
+        "()": 1008
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       13,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 2437,
+      "weight_compression_translation_and_this": 4.677061961427985
+     },
+     "reflect_Z": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 3042,
+      "unequal_pairs_9": 157,
+      "unequal_endpoint_rounds": {
+       "0": 300,
+       "13": 300
+      },
+      "weight_breaking_rounds": [
+       0,
+       13
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 1176,
+       "coordinate_sums": {
+        "(13, 13, 13)": 1176
+       },
+       "unchanged_axes": {
+        "()": 1176
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       13,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 2208,
+      "weight_compression_translation_and_this": 5.16213768115942
+     },
+     "reflect_both": {
+      "automorphism": true,
+      "automorphism_weighted_9": false,
+      "preserves_observable_masks": false,
+      "swapped_pairs": 5698,
+      "unequal_pairs_9": 157,
+      "unequal_endpoint_rounds": {
+       "0": 300,
+       "13": 300
+      },
+      "weight_breaking_rounds": [
+       0,
+       13
+      ],
+      "breaking_depth_start": 1,
+      "breaking_depth_end": 1,
+      "on_halved_grid": {
+       "layout": "halved",
+       "cells": 2184,
+       "coordinate_sums": {
+        "(13, 13, 13)": 2184
+       },
+       "unchanged_axes": {
+        "()": 2184
+       }
+      },
+      "exact_flip_on_halved_grid": true,
+      "halved_grid_flip_sums": [
+       13,
+       13,
+       13
+      ],
+      "weight_classes_translation_and_this": 1455,
+      "weight_compression_translation_and_this": 7.833676975945017
+     }
+    },
+    "periodic8_weighted_group_order": 256,
+    "periodic8_distinct_weights_9": 17
+   },
+   "seconds": 4.35
+  }
+ ]
+}

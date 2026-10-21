@@ -1,0 +1,279 @@
+diff -ruN gc_a/Makefile gc_b/Makefile
+--- gc_a/Makefile	2026-09-17 08:10:00.000000000 +0530
++++ gc_b/Makefile	2026-10-21 10:27:59.990044356 +0530
+@@ -32,6 +32,7 @@
+ 
+ test: $(BIN)
+ 	python3 tests/test_orbits.py
++	python3 tests/test_coloured_orbits.py
+ 
+ example: $(BIN)
+ 	python3 src/orbits_serial.py --edges examples/mygraph.txt --out -
+diff -ruN gc_a/src/orbits_serial.py gc_b/src/orbits_serial.py
+--- gc_a/src/orbits_serial.py	2026-09-17 08:10:00.000000000 +0530
++++ gc_b/src/orbits_serial.py	2026-10-21 10:27:34.774042289 +0530
+@@ -2,7 +2,7 @@
+ """
+ GraphCrunch. Automorphism vertex and edge orbits via twin contraction.
+ 
+-    orbits_serial.py --edges EDGES.tsv [--out ORBITS.txt] [--raw]
++    orbits_serial.py --edges EDGES.tsv [--colours COLOURS.tsv] [--out ORBITS.txt] [--raw]
+ 
+ Stages:
+   1. twin classes: identical open OR closed neighbourhoods, provably interchangeable
+@@ -12,6 +12,10 @@
+      share an orbit of the quotient, and edge orbits lift by the two-family rule
+      in lift_edge_orbits below
+ 
++--colours gives a vertex colouring (one "vertex colour" pair per line; vertices not listed get
++colour 0). Orbits are then those of the colour-preserving automorphism group: twins must also share
++a colour, and each quotient vertex is coloured by (colour, class size, clique type).
++
+ --raw additionally runs the solver on the uncontracted graph and checks the two
+ partitions are identical, which is the only thing that makes the timing meaningful.
+ 
+@@ -72,9 +76,9 @@
+         if len(p) >= 2: out.append((p[0], p[1]))
+     return out
+ 
+-def twin_classes(n, adj):
++def twin_classes(n, adj, colour=None):
+     """Classes of vertices with identical open OR closed neighbourhoods, with a
+-    clique flag per class.
++    clique flag per class. With a colouring, twins must also share a colour.
+ 
+     The flag is free and never needs testing. A class built from equal OPEN
+     neighbourhoods is always an independent set, because N(u) = N(v) with u
+@@ -85,10 +89,11 @@
+ 
+     Returns (classes, is_clique), parallel lists.
+     """
++    col = colour if colour is not None else [0] * n
+     byo, byc = defaultdict(list), defaultdict(list)
+     for v in range(n):
+-        byo[frozenset(adj[v])].append(v)
+-        byc[frozenset(adj[v] | {v})].append(v)
++        byo[(col[v], frozenset(adj[v]))].append(v)
++        byc[(col[v], frozenset(adj[v] | {v}))].append(v)
+     seen, cls, clq = set(), [], []
+     for tbl, flag in ((byo, False), (byc, True)):
+         for g in tbl.values():
+@@ -109,6 +114,17 @@
+     dt = time.time() - t0          # includes parsing the solver's output
+     return orbits, dt
+ 
++def parse_order(txt):
++    """log10 of the group order from the solver's "Order:" line, or None."""
++    import math
++    m = re.search(r"Order:\s*([0-9.]+)(?:e([+-]?\d+)|\*10\^(\d+))?", txt)
++    if not m:
++        return None
++    mant = float(m.group(1))
++    exp = int(m.group(2) or m.group(3) or 0)
++    return math.log10(mant) + exp
++
++
+ def parse(txt):
+     lines = txt.splitlines()
+     i = next(k for k, L in enumerate(lines) if L.strip() == "Vertex Classes")
+@@ -172,12 +188,14 @@
+     return edges_path.with_suffix("").parent / f".orb_{key}.json"
+ 
+ 
+-def structure(n, adj, ue, binary=None, work=None, cache=None):
++def structure(n, adj, ue, binary=None, work=None, cache=None, colour=None):
+     """Contract, solve the coloured quotient, lift vertex AND edge orbits.
+ 
+     n      number of vertices, indexed 0..n-1
+     adj    dict v -> set of neighbours
+     ue     canonical undirected edge list, (min, max) index pairs
++    colour optional list, colour of each vertex; orbits are then those of the
++           colour-preserving automorphism group
+     cache  optional path. If it exists the result is READ FROM IT and no solving
+            happens, so the returned timings are not measurements. Off by default,
+            which keeps --raw and any benchmark honest. Callers that cache must
+@@ -191,12 +209,13 @@
+                 d["how"] + "  [READ FROM CACHE, timings are not measurements]",
+                 d["st"])
+     with workdir(work) as wd:
+-        return _structure(n, adj, ue, find_binary(binary), wd, cache)
++        return _structure(n, adj, ue, find_binary(binary), wd, cache, colour)
+ 
+ 
+-def _structure(n, adj, ue, binary, work, cache):
++def _structure(n, adj, ue, binary, work, cache, colour=None):
++    import math
+     t0 = time.time()
+-    cls, clq = twin_classes(n, adj)
++    cls, clq = twin_classes(n, adj, colour)
+     rep = {v: i for i, c in enumerate(cls) for v in c}
+     m = len(cls)
+     qe = sorted({(min(rep[x], rep[y]), max(rep[x], rep[y])) for x, y in ue
+@@ -205,7 +224,9 @@
+     # twins is an independent set and a class of three true twins is a triangle.
+     # Same size, different graphs, and mapping one onto the other would make the
+     # lift unsound. See negative_case.py for a graph where it goes wrong.
+-    key = [(len(c), clq[i]) for i, c in enumerate(cls)]
++    # With an input colouring the key also carries the (shared) colour of the class.
++    col = colour if colour is not None else [0] * n
++    key = [(col[c[0]], len(c), clq[i]) for i, c in enumerate(cls)]
+     cmap = {k: i for i, k in enumerate(sorted(set(key)))}
+     (work / "_quot.el").write_text(
+         f"{m} {len(qe)}\n" + "\n".join(f"{x} {y}" for x, y in qe) + "\n")
+@@ -217,7 +238,11 @@
+                     work / "_quot.out")
+ 
+     t1 = time.time()
+-    qeorb = parse_edges((work / "_quot.out").read_text())
++    qtxt = (work / "_quot.out").read_text()
++    qeorb = parse_edges(qtxt)
++    # |Aut(G)| = |K| |A|, K the product of the symmetric groups on the twin classes
++    log10_K = sum(math.lgamma(len(c) + 1) for c in cls) / math.log(10)
++    log10_A = parse_order(qtxt)
+     vlift = [sorted(v for i in g for v in cls[i]) for g in qorb]
+     elift = lift_edge_orbits(cls, clq, qorb, qeorb)
+     tl = time.time() - t1          # parsing the edge classes and lifting both sides
+@@ -227,7 +252,8 @@
+            f"{len(qe)} edges, {len(cmap)} colours, {sum(clq)} true-twin classes), "
+            f"contract {tc:.2f}s + solver {qt:.2f}s + lift {tl:.2f}s = {ttot:.2f}s")
+     st = dict(m=m, tc=tc, qt=qt, tl=tl, ttot=ttot, qe=len(qe),
+-              n_clique=sum(clq), qeorb=len(qeorb))
++              n_clique=sum(clq), qeorb=len(qeorb), log10_K=log10_K,
++              log10_order=None if log10_A is None else log10_K + log10_A)
+     if cache is not None:
+         Path(cache).write_text(json.dumps(
+             {"v": vlift, "e": [[list(e) for e in g] for g in elift],
+@@ -245,6 +271,8 @@
+                     help="path to %s (default: $GRAPHCRUNCH_BIN, then alongside "
+                          "this script, then PATH)" % BIN_NAME)
+     ap.add_argument("--raw", action="store_true")
++    ap.add_argument("--colours", default=None,
++                    help='vertex colouring, one "vertex colour" pair per line')
+     a = ap.parse_args()
+ 
+     edges = read_edges(a.edges)
+@@ -257,13 +285,29 @@
+     ue = sorted({(min(idx[u], idx[v]), max(idx[u], idx[v])) for u, v in edges
+                  if u != v})
+     print(f"graph: {n} vertices, {len(ue)} edges")
++    colour = None
++    if a.colours:
++        cmap = {}
++        for line in Path(a.colours).read_text().splitlines():
++            line = line.strip()
++            if line and not line.startswith("#"):
++                name, c = line.split()[:2]
++                cmap[name] = int(c)
++        unknown = set(cmap) - set(idx)
++        if unknown:
++            raise SystemExit(f"colour file names {len(unknown)} vertices not in the graph")
++        colour = [cmap.get(x, 0) for x in nodes]
++        print(f"colouring: {len(set(colour))} colours")
+ 
+     binary = find_binary(a.binary)
+-    lifted, eo, how, st = structure(n, adj, ue, binary)
++    lifted, eo, how, st = structure(n, adj, ue, binary, colour=colour)
+     print(f"contraction: {n} -> {st['m']} vertices ({100*st['m']/n:.1f}%), "
+           f"{st['qe']} edges, {st['n_clique']} true-twin classes, {st['tc']:.2f}s")
+     print(f"automorph_serial_col on quotient: {st['qt']:.2f}s")
+     print(f"lift: {st.get('tl', float('nan')):.2f}s")
++    if st.get("log10_order") is not None:
++        print(f"group order: log10 |Aut(G)| = {st['log10_order']:.6f} "
++              f"(log10 |K| = {st['log10_K']:.6f})")
+     nt = [o for o in lifted if len(o) > 1]
+     cov = sum(len(o) for o in nt) / n
+     print(f"lifted: {len(lifted)} orbits, {len(nt)} non-trivial, "
+@@ -284,7 +328,11 @@
+       with workdir() as work:
+         (work/"_raw.el").write_text(
+             f"{n} {len(ue)}\n" + "\n".join(f"{x} {y}" for x, y in ue) + "\n")
+-        rorb, rt = call(binary, work/"_raw.el", None, work/"_raw.out")
++        rcol = None
++        if colour is not None:
++            rcol = work/"_raw.col"
++            rcol.write_text("\n".join(map(str, colour)) + "\n")
++        rorb, rt = call(binary, work/"_raw.el", rcol, work/"_raw.out")
+         same = ({frozenset(o) for o in lifted} == {frozenset(o) for o in rorb})
+         print(f"raw graph, no contraction: {rt:.2f}s, {len(rorb)} orbits")
+         print(f"IDENTICAL PARTITION: {same}   "
+Binary files gc_a/src/__pycache__/orbits_serial.cpython-38.pyc and gc_b/src/__pycache__/orbits_serial.cpython-38.pyc differ
+diff -ruN gc_a/tests/test_coloured_orbits.py gc_b/tests/test_coloured_orbits.py
+--- gc_a/tests/test_coloured_orbits.py	1970-01-01 05:30:00.000000000 +0530
++++ gc_b/tests/test_coloured_orbits.py	2026-10-21 10:27:34.778042289 +0530
+@@ -0,0 +1,76 @@
++#!/usr/bin/env python3
++"""Brute-force validation of the coloured contraction and of the reported group order.
++
++Same method as test_orbits.py, with a vertex colouring: the true orbits and the
++true group order of the colour-preserving automorphism group are found by
++enumerating every permutation, and compared with structure(..., colour=...).
++
++Run:  python3 tests/test_coloured_orbits.py
++"""
++import math, random, sys
++from collections import defaultdict
++from itertools import combinations, permutations, product
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
++from orbits_serial import structure, find_binary
++
++
++def brute_force(n, ue, col):
++    es = set(map(frozenset, ue))
++    auts = [p for p in permutations(range(n))
++            if all(col[p[v]] == col[v] for v in range(n))
++            and all(frozenset((p[u], p[v])) in es for u, v in ue)]
++    vo = {frozenset(g[x] for g in auts) for x in range(n)}
++    eo = {frozenset(tuple(sorted((g[u], g[v]))) for g in auts) for u, v in ue}
++    return vo, eo, len(auts)
++
++
++def check(n, ue, col, binary):
++    adj = defaultdict(set)
++    for u, v in ue:
++        adj[u].add(v); adj[v].add(u)
++    for v in range(n):
++        adj[v]
++    vlift, elift, _, st = structure(n, adj, sorted(ue), binary, colour=list(col))
++    want_v, want_e, order = brute_force(n, ue, col)
++    if {frozenset(o) for o in vlift} != want_v:
++        return "vertex orbits differ"
++    if {frozenset(tuple(sorted(e)) for e in g) for g in elift} != want_e:
++        return "edge orbits differ"
++    if abs(st["log10_order"] - math.log10(order)) > 1e-9:
++        return f"group order differs: {st['log10_order']} vs {math.log10(order)}"
++    return None
++
++
++def main():
++    binary = find_binary()
++    rnd = random.Random(1)
++    fails, count = 0, 0
++    cases = []
++    for n in range(2, 5):
++        P = list(combinations(range(n), 2))
++        for mask in range(1 << len(P)):
++            ue = [P[i] for i in range(len(P)) if mask >> i & 1]
++            for col in product(range(2), repeat=n):
++                cases.append((n, ue, col))
++    for _ in range(200):
++        n = rnd.choice([5, 6])
++        ue = [e for e in combinations(range(n), 2) if rnd.random() < 0.5]
++        cases.append((n, ue, [rnd.randrange(2) for _ in range(n)]))
++    # same size, different type, same colour: the case the clique flag exists for
++    cases.append((7, [(0, 6), (1, 6), (2, 6), (3, 4), (3, 5), (4, 5), (3, 6), (4, 6), (5, 6)], [0] * 7))
++    # false twins with different colours must not be merged
++    cases.append((3, [(0, 2), (1, 2)], [0, 1, 0]))
++    for n, ue, col in cases:
++        err = check(n, ue, col, binary)
++        count += 1
++        if err:
++            fails += 1
++            print("FAIL", n, ue, col, err)
++    print(f"{count} coloured graphs checked, {fails} failures")
++    sys.exit(1 if fails else 0)
++
++
++if __name__ == "__main__":
++    main()

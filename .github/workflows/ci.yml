@@ -1,0 +1,26 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: automorphism-aware-decoder
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: third-party trees beside the repository
+        run: |
+          mkdir third_party && cd third_party
+          git clone -q https://github.com/NVIDIA/Ising-Decoding.git && git -C Ising-Decoding checkout -q 33acb152e403bc189f2effdb07f1a87b34c745f1
+          git clone -q https://github.com/vaibh-pra/GraphCrunch.git && git -C GraphCrunch checkout -q 0d96131496377cf065cfa1a656a7ecd48b41f215
+          cd GraphCrunch && ./scripts/get_nauty.sh && make && make test
+      - name: dependencies (CPU only)
+        run: pip install -r automorphism-aware-decoder/requirements.txt
+      - name: lint and tests
+        working-directory: automorphism-aware-decoder
+        run: |
+          make tools
+          make lint PY=python
+          make test PY=python

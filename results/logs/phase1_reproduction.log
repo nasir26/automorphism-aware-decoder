@@ -1,0 +1,11 @@
+{
+ "rows_with_expectation": 52,
+ "matching": 51,
+ "mismatches": [
+  [
+   "distinct weights, exact binary64",
+   96,
+   78
+  ]
+ ]
+}
