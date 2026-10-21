@@ -160,3 +160,114 @@ Each entry: date, decision, reason, alternatives considered.
 - The 35-point σ-twin sweep took 62 minutes on 192 workers; it was estimated at about 5 minutes and
   started without asking. The estimate missed that the first round already samples 38.4 M shots at
   every point. The rule was broken; later runs are sized with a timing probe first.
+
+## 2026-10-21: Phase 2 decisions and Phase 3 budget (approved)
+
+- **D-1:** stays recorded as an unexplained difference (96 distinct exact weights against the
+  table's 78). The table is not called wrong.
+- **Budget (approved "continue", launch approved "yes continue"):** three arms (baseline, augmented,
+  equivariant) x three seeds; d = rounds = 5, basis Z, Stim generator, p = 0.006 (the noise upscaling
+  of `nasir26/fpga-neural-predecoder`); depth 2 (R = 5), width 64; 20 epochs of 2,000,000 fresh
+  DEM-level shots; batch 256; Adam 1e-3. All 9 runs side by side, each pinned to 14 physical cores
+  and their SMT siblings, 28 threads (`bench/phase3_launch.sh`). Test-time symmetrisation (TTS) is
+  applied at evaluation to the baseline and augmented models, without retraining.
+- **Timing probe:** the first head (per-channel `einsum`) cost about 1.15 ms per shot and did not scale
+  with threads; rewritten as 1x1 convolutions plus one shifted elementwise product per channel:
+  73 ms per batch of 256 at 28 threads, about 3.2 h per run in isolation.
+- **Data generator:** Stim's rotated memory circuit, because σ is an exact flip of the halved grid
+  there and the earlier pre-decoder used it.
+
+## 2026-10-21: Phase 3 design (what differs from the earlier pre-decoder, and why)
+
+- **Basis sector only:** the network sees only the memory-basis detectors. In Stim's rotated memory
+  circuits no decoding-graph edge joins the two sectors and no edge of the other sector flips the
+  observable (asserted in `nn.grid.sector_grid` at every d), so nothing that affects the logical
+  prediction is dropped, and σ acts on the input as the flip of all three grid axes.
+- **No diff frames:** the earlier repository fed XOR differences of consecutive layers. That map does
+  not commute with time reversal, so it is replaced by the raw detection events for all arms; it is
+  a fixed linear map the first layer can learn.
+- **Inputs:** detection events, a site mask, a first-layer and a last-layer indicator. Boundary policy
+  (b): the indicators flip with the volume under σ, so on the real problem the network still tells
+  the two time boundaries apart and the equivariant arm is exactly equivariant only away from them
+  (`tests/test_nn.py::test_equivariant_model_breaks_only_near_time_boundaries`). Swapping the two
+  indicator channels under σ was tried first and is wrong: it makes them a σ-invariant pair, which
+  is policy (a); caught by the equivariance test before any training.
+- **Edge head:** g_c(a, b) = w1 . a + w2 . b + u . (a * b) + bias with a, b the hidden features at the
+  two endpoints, for every arm; the equivariant arm ties w1 = w2 and uses point-symmetric kernels
+  (projection of free parameters). Same FLOPs in every arm.
+- **Targets:** per-edge XOR parity of fired DEM errors using the decomposition of each DEM line into
+  graphlike components, so decomposed hyperedges (Y-type faults) are labelled too; the earlier
+  repository dropped lines with more than two detectors. Tested: the labels reproduce the sector
+  syndrome and the observable exactly.
+- **Earlier model, for context:** its R = 5 model is 4.4x worse than PyMatching at threshold 0.5,
+  d = 5, p = 0.003 (its `docs/LIMITATIONS.md`). A 400k-shot mini run of this design (one seed) gave
+  725 to 921 failures in 100,000 shots at threshold 0.5 against PyMatching's 365, and matched
+  PyMatching at threshold 0.98. No pre-decoder arm is expected to beat PyMatching alone; H3 compares
+  arms with each other.
+
+## 2026-10-21: Phase 3 evaluation protocol (fixed before any full-budget result)
+
+- **Validation:** d = 5, p = 0.003, 200,000 circuit shots, seed 5,000,001.
+- **Operating points per model variant, all set on validation only:** `sdr50` (primary), the
+  threshold removing 50% of the sector detection events; `t0.5`, the fixed threshold 0.5; `best`, the
+  grid threshold with the fewest validation failures. The primary point compares models at equal
+  work removed from the matcher; `best` tends to the trivial threshold where nothing is applied.
+- **Test:** p = 0.003, d = 5, 7, 9 with 200,000 shots and d = 11, 13 with 100,000 shots (seed
+  6,000,000 + d), the same shots for every model; per-shot failure bits stored.
+- **Verdict rule for H3:** paired against the baseline of the same seed on the same shots, at `sdr50`.
+  "Beats the baseline" needs a lower failure count for all three seeds and a pooled paired 95%
+  interval on the LER difference that excludes zero at d = 5. "Degrades less beyond its training
+  distance" needs the same at d = 9, 11, 13 pooled. Baseline better under the same rule: refuted.
+  Anything else: inconclusive. TTS is judged the same way, as a fourth arm.
+
+## 2026-10-21: Phase 3 training time over the estimate
+
+- With all 9 runs side by side the first epoch took 1,398 to 1,614 s (isolated probe: about 570 s);
+  the shared SMT cores and memory bandwidth were not in the probe. 20 epochs therefore take 7.8 to
+  9 h instead of the quoted 5 to 6 h. Reported at epoch 0; you chose to keep the full 20 epochs
+  ("ok" to the recommended option), so the budget is unchanged.
+- You asked for the evaluation to start automatically: `results/phase3/chain.sh` waits for the
+  training processes to exit, checks that all 9 runs completed 20 epochs (otherwise it stops), then
+  runs `bench/phase3_eval_launch.sh` (about 3 h) and `bench/phase3_report.py`.
+
+## 2026-10-21: Phase 3 requirements added before the evaluation ran
+
+- Re-reading the prompt, three Phase 3 items were missing and are added before any full-budget
+  evaluation: regression tests for the earlier repository's three bugs and the prompt's 10,000-shot
+  check that permuted corrections on the transformed syndrome give the transformed residual
+  (`tests/test_nn.py`); the per-edge-type correction profile (applied edges per channel at every
+  operating point); and the post-training equivariance deviation with parameter counts.
+- **Equivariance tolerance:** on a mini model the largest FP32 deviation is 1.5e-5, above the
+  prompt's 1e-6, on logits up to 18 in size (relative 8e-7); the same model in FP64 gives 1.8e-14. The
+  FP32 figure is summation-order rounding, not a construction error; both are recorded per model,
+  and the integer network of Phase 4 is checked bit for bit instead.
+- **Observable bits are not σ-invariant:** σ maps 36 of the 301 local edges at d = 5 to an edge with a
+  different observable bit (σ moves the observable's support to an equivalent representative). The
+  augmentation moves edge labels only; observable bits always come from the edge's own mask.
+- **Hidden channel representation:** the prompt suggests the regular representation of Z2 (paired
+  channels); this implementation uses the trivial one (every hidden channel σ-invariant,
+  point-symmetric kernels). Both satisfy the stated kernel constraint; the trivial one halves the free
+  kernel parameters. The regular representation is not tried.
+- **Boundary policy (a)** (exact equivariance with symmetrised training noise) is not evaluated; only
+  policy (b), as approved.
+
+## 2026-10-21: Phase 4 design (go-ahead given without a separate stop: "no need to wait for my approval for phase 4")
+
+- **Recipe reused:** per-channel symmetric weights (INT8, INT4, ternary with the 0.7 mean |w| rule),
+  unsigned 8-bit activations with a running-max scale (momentum 0.9), biases as integers at the
+  accumulator scale, round half up, clipping; requantization in float64 from the exact integer
+  accumulator; decisions on the integer accumulator, never through a sigmoid.
+- **Head in integers:** A (linear, w1 and w2 share one scale per channel) and B (bilinear, own scale)
+  are combined as acc = 2^16 (A + bias) + m B with one 16-bit fixed-point multiplier m per channel;
+  the fake-quantized forward reproduces exactly this (u is effectively on that grid).
+- **Integer equivariance:** point-symmetric float kernels quantize to point-symmetric integers and the
+  tied head stores one tensor, so the integer network commutes with the volume flip bit for bit
+  (tested at all three precisions; the unconstrained model fails the same test).
+- **Golden model:** NumPy int64 reference (`golden_forward`) and a float64 torch path (`GoldenTorch`)
+  used for large evaluations, bit-equal by test; the fake-quantized model's decisions match the golden
+  decisions exactly in tests.
+- **Runs:** QAT fine-tuning of the baseline and equivariant models, 3 seeds x 3 precisions (18 runs,
+  3 epochs x 500,000 shots, lr 1e-4, from each FP32 checkpoint); golden-model evaluation by the
+  Phase 3 protocol at d = 5 and 9 (200,000 test shots each, the Phase 3 test shots). Augmented and
+  TTS variants are not quantized. Started automatically after the Phase 3 report
+  (`results/phase4_chain.sh`, `bench/phase4_launch.sh`), about 2 to 2.5 h.
