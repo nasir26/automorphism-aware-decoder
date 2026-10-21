@@ -1,0 +1,24 @@
+nvidia 13 X 0.003 1.0 1.0 0.7652
+nvidia 13 X 0.005 1.0 1.0 0.5286
+nvidia 13 X 0.007 1.0 1.0 0.3688
+nvidia 13 Z 0.005 1.0 1.0 0.538
+nvidia 9 X 0.005 1.0 1.0 0.885
+nvidia 5 X 0.005 1.0 1.0 0.999
+stim 13 X 0.005 1.0 1.0 0.4266
+stim 9 X 0.005 1.0 1.0 0.8264
+nvidia P 8 translate_1 1.0 0.7845
+nvidia P 8 translate_3 1.0 0.7095
+nvidia P 8 reflect_X 1.0 0.6805
+nvidia P 8 reflect_Z 1.0 0.688
+nvidia P 16 translate_1 1.0 0.7895
+nvidia P 16 translate_3 1.0 0.7065
+nvidia P 16 reflect_X 1.0 0.403
+nvidia P 16 reflect_Z 1.0 0.436
+stim P 8 translate_1 1.0 0.767
+stim P 8 translate_3 1.0 0.6605
+stim P 8 reflect_X 1.0 0.634
+stim P 8 reflect_Z 1.0 0.712
+stim P 16 translate_1 1.0 0.795
+stim P 16 translate_3 1.0 0.664
+stim P 16 reflect_X 1.0 0.3685
+stim P 16 reflect_Z 1.0 0.4515

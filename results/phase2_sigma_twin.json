@@ -1,0 +1,1654 @@
+{
+ "tier": "T4-SIM",
+ "seconds": 3734.6,
+ "min_disagree": 100,
+ "max_shots": 40000000,
+ "rows": [
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.002,
+   "shots": 38400000,
+   "fail": 65451,
+   "fail_twin": 66233,
+   "disagree": 5908,
+   "fail_and_disagree": 2563,
+   "fail_and_agree": 62888,
+   "conclusive": true,
+   "disagree_rate": 0.00015385416666666667,
+   "disagree_rate_wilson95": [
+    0.00014998091348764636,
+    0.00015782743071869384
+   ],
+   "ler_mwpm": 0.001704453125,
+   "ler_mwpm_wilson95": [
+    0.0016914558238102396,
+    0.0017175501268137897
+   ],
+   "p_fail_given_disagree": 0.4338185511171293,
+   "p_fail_given_disagree_wilson95": [
+    0.42122790010546646,
+    0.44649521345021476
+   ],
+   "p_fail_given_agree": 0.001637960340356532,
+   "p_fail_given_agree_wilson95": [
+    0.0016252186639172715,
+    0.0016508017460676813
+   ],
+   "recall": 0.039159065560495636,
+   "recall_wilson95": [
+    0.03769983824398774,
+    0.04067238716523241
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 65745,
+   "ler_lighter_own_weight": 0.001712109375,
+   "ler_lighter_own_weight_wilson95": [
+    0.0016990828531353017,
+    0.0017252355959568397
+   ],
+   "twin_lighter_own_weight": 7039421,
+   "own_weight_ties": 22097319
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.003,
+   "shots": 38400000,
+   "fail": 207065,
+   "fail_twin": 209268,
+   "disagree": 18907,
+   "fail_and_disagree": 8352,
+   "fail_and_agree": 198713,
+   "conclusive": true,
+   "disagree_rate": 0.0004923697916666667,
+   "disagree_rate_wilson95": [
+    0.0004854029453045092,
+    0.0004994365811705032
+   ],
+   "ler_mwpm": 0.005392317708333334,
+   "ler_mwpm_wilson95": [
+    0.0053692036423755776,
+    0.005415530737034954
+   ],
+   "p_fail_given_disagree": 0.4417411540699212,
+   "p_fail_given_disagree_wilson95": [
+    0.4346751123171496,
+    0.448830865544777
+   ],
+   "p_fail_given_agree": 0.005177366887389059,
+   "p_fail_given_agree_wilson95": [
+    0.005154711194704977,
+    0.005200121634596528
+   ],
+   "recall": 0.04033516045686137,
+   "recall_wilson95": [
+    0.03949622212144064,
+    0.04119115445776942
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 208158,
+   "ler_lighter_own_weight": 0.00542078125,
+   "ler_lighter_own_weight_wilson95": [
+    0.00539760645945634,
+    0.005444054997592445
+   ],
+   "twin_lighter_own_weight": 9206297,
+   "own_weight_ties": 16871708
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.004,
+   "shots": 38400000,
+   "fail": 461020,
+   "fail_twin": 465340,
+   "disagree": 43130,
+   "fail_and_disagree": 19405,
+   "fail_and_agree": 441615,
+   "conclusive": true,
+   "disagree_rate": 0.0011231770833333332,
+   "disagree_rate_wilson95": [
+    0.0011126326167912933,
+    0.0011338213668030388
+   ],
+   "ler_mwpm": 0.012005729166666666,
+   "ler_mwpm_wilson95": [
+    0.011971330117677684,
+    0.012040225855166233
+   ],
+   "p_fail_given_disagree": 0.44991884998840714,
+   "p_fail_given_disagree_wilson95": [
+    0.44522839598245734,
+    0.45461822468116564
+   ],
+   "p_fail_given_agree": 0.011513322124563343,
+   "p_fail_given_agree_wilson95": [
+    0.011479609631737843,
+    0.011547132465322412
+   ],
+   "recall": 0.04209144939482018,
+   "recall_wilson95": [
+    0.04151561915540989,
+    0.04267491091629997
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 463368,
+   "ler_lighter_own_weight": 0.012066875,
+   "ler_lighter_own_weight_wilson95": [
+    0.012032389402746565,
+    0.01210145822452976
+   ],
+   "twin_lighter_own_weight": 10841886,
+   "own_weight_ties": 12809684
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.005,
+   "shots": 38400000,
+   "fail": 831722,
+   "fail_twin": 840276,
+   "disagree": 86780,
+   "fail_and_disagree": 39113,
+   "fail_and_agree": 792609,
+   "conclusive": true,
+   "disagree_rate": 0.0022598958333333334,
+   "disagree_rate_wilson95": [
+    0.0022449264644229675,
+    0.002274964791732912
+   ],
+   "ler_mwpm": 0.021659427083333332,
+   "ler_mwpm_wilson95": [
+    0.021613432406574862,
+    0.02170551746805852
+   ],
+   "p_fail_given_disagree": 0.4507144503341784,
+   "p_fail_given_disagree_wilson95": [
+    0.44740618564018286,
+    0.45402707840651946
+   ],
+   "p_fail_given_agree": 0.020687611221400865,
+   "p_fail_given_agree_wilson95": [
+    0.020642588221739706,
+    0.020732730340693215
+   ],
+   "recall": 0.04702653049937359,
+   "recall_wilson95": [
+    0.046573653042592505,
+    0.04748359237076198
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 836765,
+   "ler_lighter_own_weight": 0.02179075520833333,
+   "ler_lighter_own_weight_wilson95": [
+    0.02174462424388587,
+    0.021836981854470947
+   ],
+   "twin_lighter_own_weight": 11997317,
+   "own_weight_ties": 9761599
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.006,
+   "shots": 38400000,
+   "fail": 1324855,
+   "fail_twin": 1337745,
+   "disagree": 150796,
+   "fail_and_disagree": 68953,
+   "fail_and_agree": 1255902,
+   "conclusive": true,
+   "disagree_rate": 0.003926979166666666,
+   "disagree_rate_wilson95": [
+    0.003907246954337419,
+    0.003946810634929568
+   ],
+   "ler_mwpm": 0.03450143229166667,
+   "ler_mwpm_wilson95": [
+    0.034443751067406866,
+    0.03455920665442225
+   ],
+   "p_fail_given_disagree": 0.4572601395262474,
+   "p_fail_given_disagree_wilson95": [
+    0.45474683507339797,
+    0.45977562156026996
+   ],
+   "p_fail_given_agree": 0.03283472252128437,
+   "p_fail_given_agree_wilson95": [
+    0.03277829368957201,
+    0.03289124519348291
+   ],
+   "recall": 0.052045695566684654,
+   "recall_wilson95": [
+    0.05166876101484942,
+    0.052425227921699916
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 1332622,
+   "ler_lighter_own_weight": 0.034703697916666665,
+   "ler_lighter_own_weight_wilson95": [
+    0.034645853768977955,
+    0.03476163516238118
+   ],
+   "twin_lighter_own_weight": 12815845,
+   "own_weight_ties": 7517512
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.007,
+   "shots": 38400000,
+   "fail": 1937402,
+   "fail_twin": 1955329,
+   "disagree": 223893,
+   "fail_and_disagree": 102983,
+   "fail_and_agree": 1834419,
+   "conclusive": true,
+   "disagree_rate": 0.005830546875,
+   "disagree_rate_wilson95": [
+    0.005806515218933236,
+    0.005854677406128285
+   ],
+   "ler_mwpm": 0.050453177083333335,
+   "ler_mwpm_wilson95": [
+    0.050383992271996546,
+    0.05052245184148794
+   ],
+   "p_fail_given_disagree": 0.45996525125841364,
+   "p_fail_given_disagree_wilson95": [
+    0.4579014829066736,
+    0.462030393434721
+   ],
+   "p_fail_given_agree": 0.04805149461677693,
+   "p_fail_given_agree_wilson95": [
+    0.04798369468020412,
+    0.048119385511037144
+   ],
+   "recall": 0.053155204753582375,
+   "recall_wilson95": [
+    0.05284018340232661,
+    0.05347199816408207
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 1948207,
+   "ler_lighter_own_weight": 0.05073455729166667,
+   "ler_lighter_own_weight_wilson95": [
+    0.05066518995827889,
+    0.05080401451557278
+   ],
+   "twin_lighter_own_weight": 13408591,
+   "own_weight_ties": 5792060
+  },
+  {
+   "family": "nvidia",
+   "distance": 5,
+   "basis": "X",
+   "p": 0.008,
+   "shots": 38400000,
+   "fail": 2660458,
+   "fail_twin": 2683211,
+   "disagree": 287327,
+   "fail_and_disagree": 132287,
+   "fail_and_agree": 2528171,
+   "conclusive": true,
+   "disagree_rate": 0.007482473958333334,
+   "disagree_rate_wilson95": [
+    0.007455265929845735,
+    0.007509780531359408
+   ],
+   "ler_mwpm": 0.06928276041666667,
+   "ler_mwpm_wilson95": [
+    0.06920248567555161,
+    0.06936312133711413
+   ],
+   "p_fail_given_disagree": 0.46040573980168936,
+   "p_fail_given_disagree_wilson95": [
+    0.45858376306705045,
+    0.46222877528316625
+   ],
+   "p_fail_given_agree": 0.06633412985754109,
+   "p_fail_given_agree_wilson95": [
+    0.06625516291252481,
+    0.06641318422600512
+   ],
+   "recall": 0.049723393490895176,
+   "recall_wilson95": [
+    0.04946283698039375,
+    0.04998525036405134
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 2673242,
+   "ler_lighter_own_weight": 0.06961567708333333,
+   "ler_lighter_own_weight_wilson95": [
+    0.06953522396968169,
+    0.06969621630970628
+   ],
+   "twin_lighter_own_weight": 13816199,
+   "own_weight_ties": 4475705
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.002,
+   "shots": 38400000,
+   "fail": 22176,
+   "fail_twin": 22332,
+   "disagree": 1564,
+   "fail_and_disagree": 704,
+   "fail_and_agree": 21472,
+   "conclusive": true,
+   "disagree_rate": 4.072916666666667e-05,
+   "disagree_rate_wilson95": [
+    3.876003780213345e-05,
+    4.27983290386316e-05
+   ],
+   "ler_mwpm": 0.0005775,
+   "ler_mwpm_wilson95": [
+    0.000569951069153893,
+    0.0005851488569546518
+   ],
+   "p_fail_given_disagree": 0.45012787723785164,
+   "p_fail_given_disagree_wilson95": [
+    0.425623211113932,
+    0.4748769414525007
+   ],
+   "p_fail_given_agree": 0.0005591894419866476,
+   "p_fail_given_agree_wilson95": [
+    0.000551761726790667,
+    0.0005667170910250318
+   ],
+   "recall": 0.031746031746031744,
+   "recall_wilson95": [
+    0.029518344944263093,
+    0.034135923894158184
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 22260,
+   "ler_lighter_own_weight": 0.0005796875,
+   "ler_lighter_own_weight_wilson95": [
+    0.0005721241996473441,
+    0.0005873507260235185
+   ],
+   "twin_lighter_own_weight": 10219366,
+   "own_weight_ties": 13898053
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.003,
+   "shots": 38400000,
+   "fail": 105309,
+   "fail_twin": 106431,
+   "disagree": 8090,
+   "fail_and_disagree": 3484,
+   "fail_and_agree": 101825,
+   "conclusive": true,
+   "disagree_rate": 0.00021067708333333333,
+   "disagree_rate_wilson95": [
+    0.00020613638116939994,
+    0.00021531778500095616
+   ],
+   "ler_mwpm": 0.002742421875,
+   "ler_mwpm_wilson95": [
+    0.002725930566448904,
+    0.002759012676494899
+   ],
+   "p_fail_given_disagree": 0.43065512978986403,
+   "p_fail_given_disagree_wilson95": [
+    0.41990023381746616,
+    0.4414758524158005
+   ],
+   "p_fail_given_agree": 0.0026522514769387615,
+   "p_fail_given_agree_wilson95": [
+    0.0026360319425291646,
+    0.0026685705433028535
+   ],
+   "recall": 0.03308359209564235,
+   "recall_wilson95": [
+    0.03202026008456734,
+    0.03418098844389323
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 105853,
+   "ler_lighter_own_weight": 0.0027565885416666667,
+   "ler_lighter_own_weight_wilson95": [
+    0.002740054681430978,
+    0.0027732218920116444
+   ],
+   "twin_lighter_own_weight": 12165289,
+   "own_weight_ties": 8527904
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.004,
+   "shots": 38400000,
+   "fail": 306988,
+   "fail_twin": 309804,
+   "disagree": 24634,
+   "fail_and_disagree": 10909,
+   "fail_and_agree": 296079,
+   "conclusive": true,
+   "disagree_rate": 0.0006415104166666666,
+   "disagree_rate_wilson95": [
+    0.0006335516849221704,
+    0.0006495690617122915
+   ],
+   "ler_mwpm": 0.007994479166666667,
+   "ler_mwpm_wilson95": [
+    0.007966361216563885,
+    0.008022695558864227
+   ],
+   "p_fail_given_disagree": 0.4428432248112365,
+   "p_fail_given_disagree_wilson95": [
+    0.43664960646553985,
+    0.44905466723999443
+   ],
+   "p_fail_given_agree": 0.007715340096039735,
+   "p_fail_given_agree_wilson95": [
+    0.007687705548226903,
+    0.007743073205026431
+   ],
+   "recall": 0.03553559096772512,
+   "recall_wilson95": [
+    0.034886488591621245,
+    0.03619631766885627
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 308163,
+   "ler_lighter_own_weight": 0.008025078125,
+   "ler_lighter_own_weight_wilson95": [
+    0.00799690675365521,
+    0.008053347932317226
+   ],
+   "twin_lighter_own_weight": 13218607,
+   "own_weight_ties": 5170327
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.005,
+   "shots": 38400000,
+   "fail": 677605,
+   "fail_twin": 683801,
+   "disagree": 57692,
+   "fail_and_disagree": 25748,
+   "fail_and_agree": 651857,
+   "conclusive": true,
+   "disagree_rate": 0.0015023958333333332,
+   "disagree_rate_wilson95": [
+    0.0014901950368637143,
+    0.001514696370855274
+   ],
+   "ler_mwpm": 0.017645963541666667,
+   "ler_mwpm_wilson95": [
+    0.01760436827689149,
+    0.017687655317435644
+   ],
+   "p_fail_given_disagree": 0.44630104693891703,
+   "p_fail_given_disagree_wilson95": [
+    0.4422482783248486,
+    0.4503609664980921
+   ],
+   "p_fail_given_agree": 0.01700098491723555,
+   "p_fail_given_agree_wilson95": [
+    0.01696011376364806,
+    0.01704195285627636
+   ],
+   "recall": 0.037998538971819866,
+   "recall_wilson95": [
+    0.03754591336748503,
+    0.03845640306982162
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 680232,
+   "ler_lighter_own_weight": 0.017714375,
+   "ler_lighter_own_weight_wilson95": [
+    0.01767270053577833,
+    0.017756145961527484
+   ],
+   "twin_lighter_own_weight": 13675004,
+   "own_weight_ties": 3175705
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.006,
+   "shots": 38400000,
+   "fail": 1258212,
+   "fail_twin": 1269110,
+   "disagree": 112182,
+   "fail_and_disagree": 50642,
+   "fail_and_agree": 1207570,
+   "conclusive": true,
+   "disagree_rate": 0.00292140625,
+   "disagree_rate_wilson95": [
+    0.002904385214758228,
+    0.002938526742373788
+   ],
+   "ler_mwpm": 0.0327659375,
+   "ler_mwpm_wilson95": [
+    0.03270967655720004,
+    0.03282229192853928
+   ],
+   "p_fail_given_disagree": 0.4514271451748052,
+   "p_fail_given_disagree_wilson95": [
+    0.44851676328167367,
+    0.45434085364598686
+   ],
+   "p_fail_given_agree": 0.03153927445016585,
+   "p_fail_given_agree_wilson95": [
+    0.0314839618772881,
+    0.031594681028846834
+   ],
+   "recall": 0.0402491789936831,
+   "recall_wilson95": [
+    0.03990715140259671,
+    0.04059401401843164
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 1263006,
+   "ler_lighter_own_weight": 0.03289078125,
+   "ler_lighter_own_weight_wilson95": [
+    0.03283441676681999,
+    0.032947239193940187
+   ],
+   "twin_lighter_own_weight": 13822731,
+   "own_weight_ties": 1994633
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.007,
+   "shots": 38400000,
+   "fail": 2063003,
+   "fail_twin": 2078280,
+   "disagree": 191915,
+   "fail_and_disagree": 88319,
+   "fail_and_agree": 1974684,
+   "conclusive": true,
+   "disagree_rate": 0.004997786458333334,
+   "disagree_rate_wilson95": [
+    0.004975531484968789,
+    0.005020140473380862
+   ],
+   "ler_mwpm": 0.05372403645833333,
+   "ler_mwpm_wilson95": [
+    0.0536527656352223,
+    0.0537953965738178
+   ],
+   "p_fail_given_disagree": 0.46019852538884404,
+   "p_fail_given_disagree_wilson95": [
+    0.4579694141312432,
+    0.4624292300423158
+   ],
+   "p_fail_given_agree": 0.05168235989843511,
+   "p_fail_given_agree_wilson95": [
+    0.05161220667559131,
+    0.05175260327271533
+   ],
+   "recall": 0.04281089266472225,
+   "recall_wilson95": [
+    0.04253550576228333,
+    0.04308798226405904
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 2069936,
+   "ler_lighter_own_weight": 0.05390458333333333,
+   "ler_lighter_own_weight_wilson95": [
+    0.0538331995752416,
+    0.05397605634767408
+   ],
+   "twin_lighter_own_weight": 13801661,
+   "own_weight_ties": 1283718
+  },
+  {
+   "family": "nvidia",
+   "distance": 7,
+   "basis": "X",
+   "p": 0.008,
+   "shots": 38400000,
+   "fail": 3087680,
+   "fail_twin": 3111093,
+   "disagree": 294241,
+   "fail_and_disagree": 135414,
+   "fail_and_agree": 2952266,
+   "conclusive": true,
+   "disagree_rate": 0.007662526041666667,
+   "disagree_rate_wilson95": [
+    0.007634994499179772,
+    0.00769015609266662
+   ],
+   "ler_mwpm": 0.08040833333333333,
+   "ler_mwpm_wilson95": [
+    0.08032236737255573,
+    0.08049438324740184
+   ],
+   "p_fail_given_disagree": 0.4602145860026305,
+   "p_fail_given_disagree_wilson95": [
+    0.4584141937209598,
+    0.4620160171446297
+   ],
+   "p_fail_given_agree": 0.07747558577694254,
+   "p_fail_given_agree_wilson95": [
+    0.07739074313660525,
+    0.07756051361015716
+   ],
+   "recall": 0.043856228624727954,
+   "recall_wilson95": [
+    0.043628384500100016,
+    0.044085207789082766
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 3097501,
+   "ler_lighter_own_weight": 0.08066408854166666,
+   "ler_lighter_own_weight_wilson95": [
+    0.0805779978610163,
+    0.08075026312443559
+   ],
+   "twin_lighter_own_weight": 13697955,
+   "own_weight_ties": 814012
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.002,
+   "shots": 38400000,
+   "fail": 6590,
+   "fail_twin": 6664,
+   "disagree": 386,
+   "fail_and_disagree": 156,
+   "fail_and_agree": 6434,
+   "conclusive": true,
+   "disagree_rate": 1.0052083333333333e-05,
+   "disagree_rate_wilson95": [
+    9.098051890635936e-06,
+    1.1106154421434924e-05
+   ],
+   "ler_mwpm": 0.00017161458333333332,
+   "ler_mwpm_wilson95": [
+    0.0001675211390078614,
+    0.00017580803497824907
+   ],
+   "p_fail_given_disagree": 0.40414507772020725,
+   "p_fail_given_disagree_wilson95": [
+    0.3563668249875599,
+    0.4538124888670929
+   ],
+   "p_fail_given_agree": 0.00016755376759776804,
+   "p_fail_given_agree_wilson95": [
+    0.00016350960353029697,
+    0.00017169794080248453
+   ],
+   "recall": 0.023672230652503793,
+   "recall_wilson95": [
+    0.020269785078080665,
+    0.027629697372331848
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 6620,
+   "ler_lighter_own_weight": 0.00017239583333333332,
+   "ler_lighter_own_weight_wilson95": [
+    0.00016829297141557735,
+    0.00017659870241421805
+   ],
+   "twin_lighter_own_weight": 12220894,
+   "own_weight_ties": 7818935
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.003,
+   "shots": 38400000,
+   "fail": 48095,
+   "fail_twin": 48543,
+   "disagree": 3102,
+   "fail_and_disagree": 1327,
+   "fail_and_agree": 46768,
+   "conclusive": true,
+   "disagree_rate": 8.078125e-05,
+   "disagree_rate_wilson95": [
+    7.798814148334944e-05,
+    8.367438401032876e-05
+   ],
+   "ler_mwpm": 0.0012524739583333333,
+   "ler_mwpm_wilson95": [
+    0.001241337025677624,
+    0.001263710682046561
+   ],
+   "p_fail_given_disagree": 0.4277885235332044,
+   "p_fail_given_disagree_wilson95": [
+    0.4104772109193356,
+    0.44527847217796074
+   ],
+   "p_fail_given_agree": 0.0012180150594456875,
+   "p_fail_given_agree_wilson95": [
+    0.0012070324582493424,
+    0.0012290974666566562
+   ],
+   "recall": 0.027591225699137124,
+   "recall_wilson95": [
+    0.02616461314451292,
+    0.029093299761231574
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 48245,
+   "ler_lighter_own_weight": 0.0012563802083333333,
+   "ler_lighter_own_weight_wilson95": [
+    0.0012452258662334675,
+    0.0012676343407091422
+   ],
+   "twin_lighter_own_weight": 13277506,
+   "own_weight_ties": 3711528
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.004,
+   "shots": 38400000,
+   "fail": 188094,
+   "fail_twin": 189861,
+   "disagree": 12467,
+   "fail_and_disagree": 5350,
+   "fail_and_agree": 182744,
+   "conclusive": true,
+   "disagree_rate": 0.0003246614583333333,
+   "disagree_rate_wilson95": [
+    0.0003190130588325473,
+    0.0003304098345314374
+   ],
+   "ler_mwpm": 0.00489828125,
+   "ler_mwpm_wilson95": [
+    0.004876248337341391,
+    0.004920413224250924
+   ],
+   "p_fail_given_disagree": 0.4291329108847357,
+   "p_fail_given_disagree_wilson95": [
+    0.4204676781586698,
+    0.43784180433848585
+   ],
+   "p_fail_given_agree": 0.004760503885467191,
+   "p_fail_given_agree_wilson95": [
+    0.00473877873830418,
+    0.004782328153970345
+   ],
+   "recall": 0.02844322519591268,
+   "recall_wilson95": [
+    0.027701538743568625,
+    0.029204173246270605
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 188858,
+   "ler_lighter_own_weight": 0.004918177083333333,
+   "ler_lighter_own_weight_wilson95": [
+    0.0048960995883431556,
+    0.0049403536359350015
+   ],
+   "twin_lighter_own_weight": 13466338,
+   "own_weight_ties": 1742636
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.005,
+   "shots": 38400000,
+   "fail": 516598,
+   "fail_twin": 520773,
+   "disagree": 35821,
+   "fail_and_disagree": 15823,
+   "fail_and_agree": 500775,
+   "conclusive": true,
+   "disagree_rate": 0.0009328385416666667,
+   "disagree_rate_wilson95": [
+    0.000923232478760352,
+    0.0009425444595842135
+   ],
+   "ler_mwpm": 0.013453072916666666,
+   "ler_mwpm_wilson95": [
+    0.013416683095299193,
+    0.013489560087955392
+   ],
+   "p_fail_given_disagree": 0.44172412830462576,
+   "p_fail_given_disagree_wilson95": [
+    0.43658799648132685,
+    0.44687275830397843
+   ],
+   "p_fail_given_agree": 0.013053192145725314,
+   "p_fail_given_agree_wilson95": [
+    0.013017324015370247,
+    0.013089157796982352
+   ],
+   "recall": 0.030629232014061224,
+   "recall_wilson95": [
+    0.030162824937172525,
+    0.031102619843231823
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 518080,
+   "ler_lighter_own_weight": 0.013491666666666667,
+   "ler_lighter_own_weight_wilson95": [
+    0.01345522532593032,
+    0.013528205349602302
+   ],
+   "twin_lighter_own_weight": 13253242,
+   "own_weight_ties": 843510
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.006,
+   "shots": 38400000,
+   "fail": 1126846,
+   "fail_twin": 1135128,
+   "disagree": 82196,
+   "fail_and_disagree": 36957,
+   "fail_and_agree": 1089889,
+   "conclusive": true,
+   "disagree_rate": 0.0021405208333333333,
+   "disagree_rate_wilson95": [
+    0.0021259526594082714,
+    0.002155188620632553
+   ],
+   "ler_mwpm": 0.029344947916666666,
+   "ler_mwpm_wilson95": [
+    0.029291613629065107,
+    0.02939837637449047
+   ],
+   "p_fail_given_disagree": 0.4496204194851331,
+   "p_fail_given_disagree_wilson95": [
+    0.44622202280954043,
+    0.4530235251283525
+   ],
+   "p_fail_given_agree": 0.0284434097528136,
+   "p_fail_given_agree_wilson95": [
+    0.028390821281335042,
+    0.02849609277728979
+   ],
+   "recall": 0.03279685067879728,
+   "recall_wilson95": [
+    0.03246958949369102,
+    0.033127297395022536
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 1129734,
+   "ler_lighter_own_weight": 0.02942015625,
+   "ler_lighter_own_weight_wilson95": [
+    0.029366755663731925,
+    0.029473650991442384
+   ],
+   "twin_lighter_own_weight": 12937265,
+   "own_weight_ties": 430066
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.007,
+   "shots": 38400000,
+   "fail": 2088643,
+   "fail_twin": 2103111,
+   "disagree": 160782,
+   "fail_and_disagree": 73157,
+   "fail_and_agree": 2015486,
+   "conclusive": true,
+   "disagree_rate": 0.00418703125,
+   "disagree_rate_wilson95": [
+    0.004166657185538449,
+    0.0042075045183631215
+   ],
+   "ler_mwpm": 0.05439174479166667,
+   "ler_mwpm_wilson95": [
+    0.05432005741990999,
+    0.05446352132219949
+   ],
+   "p_fail_given_disagree": 0.4550074013260191,
+   "p_fail_given_disagree_wilson95": [
+    0.45257438568688885,
+    0.4574425669500652
+   ],
+   "p_fail_given_agree": 0.05270730170266557,
+   "p_fail_given_agree_wilson95": [
+    0.05263652285540571,
+    0.05277817042202777
+   ],
+   "recall": 0.035026091103170814,
+   "recall_wilson95": [
+    0.03477761333117282,
+    0.03527627930675815
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 2093231,
+   "ler_lighter_own_weight": 0.054511223958333334,
+   "ler_lighter_own_weight_wilson95": [
+    0.05443946237002877,
+    0.054583074681508255
+   ],
+   "twin_lighter_own_weight": 12593295,
+   "own_weight_ties": 234687
+  },
+  {
+   "family": "nvidia",
+   "distance": 9,
+   "basis": "X",
+   "p": 0.008,
+   "shots": 38400000,
+   "fail": 3415497,
+   "fail_twin": 3437197,
+   "disagree": 277696,
+   "fail_and_disagree": 127998,
+   "fail_and_agree": 3287499,
+   "conclusive": true,
+   "disagree_rate": 0.007231666666666667,
+   "disagree_rate_wilson95": [
+    0.007204915992662026,
+    0.007258515935392136
+   ],
+   "ler_mwpm": 0.088945234375,
+   "ler_mwpm_wilson95": [
+    0.08885523786512547,
+    0.08903531313007398
+   ],
+   "p_fail_given_disagree": 0.4609284973496197,
+   "p_fail_given_disagree_wilson95": [
+    0.45907504420813977,
+    0.4627830314934059
+   ],
+   "p_fail_given_agree": 0.08623558009505407,
+   "p_fail_given_agree_wilson95": [
+    0.08614651169801488,
+    0.08632473188250087
+   ],
+   "recall": 0.037475658740148216,
+   "recall_wilson95": [
+    0.03727475515030432,
+    0.037677602782676387
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 3422626,
+   "ler_lighter_own_weight": 0.08913088541666667,
+   "ler_lighter_own_weight_wilson95": [
+    0.08904080415543981,
+    0.0892210488859473
+   ],
+   "twin_lighter_own_weight": 12278558,
+   "own_weight_ties": 121512
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.002,
+   "shots": 76800000,
+   "fail": 3770,
+   "fail_twin": 3789,
+   "disagree": 167,
+   "fail_and_disagree": 74,
+   "fail_and_agree": 3696,
+   "conclusive": true,
+   "disagree_rate": 2.1744791666666667e-06,
+   "disagree_rate_wilson95": [
+    1.8687410289267067e-06,
+    2.5302379176993677e-06
+   ],
+   "ler_mwpm": 4.908854166666667e-05,
+   "ler_mwpm_wilson95": [
+    4.754640110078042e-05,
+    5.06806981524849e-05
+   ],
+   "p_fail_given_disagree": 0.4431137724550898,
+   "p_fail_given_disagree_wilson95": [
+    0.36989158463283006,
+    0.5188942848509491
+   ],
+   "p_fail_given_agree": 4.8125104647037445e-05,
+   "p_fail_given_agree_wilson95": [
+    4.6598412833233145e-05,
+    4.9701812585916574e-05
+   ],
+   "recall": 0.019628647214854113,
+   "recall_wilson95": [
+    0.015664780317619354,
+    0.024570506717215387
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 3784,
+   "ler_lighter_own_weight": 4.9270833333333336e-05,
+   "ler_lighter_own_weight_wilson95": [
+    4.7725786512726503e-05,
+    5.086589605563539e-05
+   ],
+   "twin_lighter_own_weight": 26120415,
+   "own_weight_ties": 8005804
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.003,
+   "shots": 38400000,
+   "fail": 20822,
+   "fail_twin": 20929,
+   "disagree": 1097,
+   "fail_and_disagree": 495,
+   "fail_and_agree": 20327,
+   "conclusive": true,
+   "disagree_rate": 2.8567708333333333e-05,
+   "disagree_rate_wilson95": [
+    2.692646020383267e-05,
+    3.030899240357059e-05
+   ],
+   "ler_mwpm": 0.0005422395833333334,
+   "ler_mwpm_wilson95": [
+    0.0005349261520406928,
+    0.0005496529477895399
+   ],
+   "p_fail_given_disagree": 0.4512306289881495,
+   "p_fail_given_disagree_wilson95": [
+    0.4220043512863522,
+    0.4807972870238279
+   ],
+   "p_fail_given_agree": 0.0005293640810520029,
+   "p_fail_given_agree_wilson95": [
+    0.0005221384449166888,
+    0.0005366896557820725
+   ],
+   "recall": 0.023772932475266545,
+   "recall_wilson95": [
+    0.02178986190702792,
+    0.025931695717802954
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 20853,
+   "ler_lighter_own_weight": 0.000543046875,
+   "ler_lighter_own_weight_wilson95": [
+    0.0005357279675440329,
+    0.0005504657154580075
+   ],
+   "twin_lighter_own_weight": 13143428,
+   "own_weight_ties": 1446118
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.004,
+   "shots": 38400000,
+   "fail": 110401,
+   "fail_twin": 111299,
+   "disagree": 6102,
+   "fail_and_disagree": 2602,
+   "fail_and_agree": 107799,
+   "conclusive": true,
+   "disagree_rate": 0.00015890625,
+   "disagree_rate_wilson95": [
+    0.00015496912327725296,
+    0.00016294338658491634
+   ],
+   "ler_mwpm": 0.002875026041666667,
+   "ler_mwpm_wilson95": [
+    0.0028581406657871397,
+    0.002892010883958116
+   ],
+   "p_fail_given_disagree": 0.42641756801048836,
+   "p_fail_given_disagree_wilson95": [
+    0.41405872017718726,
+    0.4388690072633674
+   ],
+   "p_fail_given_agree": 0.002807711787951304,
+   "p_fail_given_agree_wilson95": [
+    0.0027910239589940982,
+    0.0028244991125993767
+   ],
+   "recall": 0.02356862709576906,
+   "recall_wilson95": [
+    0.022690201720887978,
+    0.024480207878250473
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 110674,
+   "ler_lighter_own_weight": 0.0028821354166666665,
+   "ler_lighter_own_weight_wilson95": [
+    0.0028652291750333038,
+    0.002899141123289484
+   ],
+   "twin_lighter_own_weight": 12696379,
+   "own_weight_ties": 522228
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.005,
+   "shots": 38400000,
+   "fail": 381815,
+   "fail_twin": 384401,
+   "disagree": 22362,
+   "fail_and_disagree": 9888,
+   "fail_and_agree": 371927,
+   "conclusive": true,
+   "disagree_rate": 0.00058234375,
+   "disagree_rate_wilson95": [
+    0.0005747630374225086,
+    0.0005900243877168826
+   ],
+   "ler_mwpm": 0.009943098958333334,
+   "ler_mwpm_wilson95": [
+    0.009911765889931558,
+    0.00997453007894358
+   ],
+   "p_fail_given_disagree": 0.4421786960021465,
+   "p_fail_given_disagree_wilson95": [
+    0.43567968537384305,
+    0.4486975696273726
+   ],
+   "p_fail_given_agree": 0.009691242592887036,
+   "p_fail_given_agree_wilson95": [
+    0.009660296610342123,
+    0.009722286735195398
+   ],
+   "recall": 0.025897358668465095,
+   "recall_wilson95": [
+    0.025398306964326368,
+    0.026405950565535668
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 382660,
+   "ler_lighter_own_weight": 0.009965104166666667,
+   "ler_lighter_own_weight_wilson95": [
+    0.009933736738411395,
+    0.009996569642727536
+   ],
+   "twin_lighter_own_weight": 12121112,
+   "own_weight_ties": 202544
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.006,
+   "shots": 38400000,
+   "fail": 988597,
+   "fail_twin": 994596,
+   "disagree": 61481,
+   "fail_and_disagree": 27741,
+   "fail_and_agree": 960856,
+   "conclusive": true,
+   "disagree_rate": 0.0016010677083333332,
+   "disagree_rate_wilson95": [
+    0.0015884716406519828,
+    0.0016137634973244096
+   ],
+   "ler_mwpm": 0.025744713541666665,
+   "ler_mwpm_wilson95": [
+    0.025694668678092503,
+    0.025794853295809897
+   ],
+   "p_fail_given_disagree": 0.4512125697369919,
+   "p_fail_given_disagree_wilson95": [
+    0.44728224759891744,
+    0.4551489883953539
+   ],
+   "p_fail_given_agree": 0.025062418295292002,
+   "p_fail_given_agree_wilson95": [
+    0.025012984883972727,
+    0.02511194688608501
+   ],
+   "recall": 0.028060979347499536,
+   "recall_wilson95": [
+    0.027737258983864716,
+    0.028388367522986114
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 990463,
+   "ler_lighter_own_weight": 0.025793307291666668,
+   "ler_lighter_own_weight_wilson95": [
+    0.02574321642080301,
+    0.025843493043376596
+   ],
+   "twin_lighter_own_weight": 11595896,
+   "own_weight_ties": 85493
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.007,
+   "shots": 38400000,
+   "fail": 2073088,
+   "fail_twin": 2085480,
+   "disagree": 138438,
+   "fail_and_disagree": 63023,
+   "fail_and_agree": 2010065,
+   "conclusive": true,
+   "disagree_rate": 0.00360515625,
+   "disagree_rate_wilson95": [
+    0.0035862489058285777,
+    0.0036241629144964723
+   ],
+   "ler_mwpm": 0.05398666666666667,
+   "ler_mwpm_wilson95": [
+    0.05391523163819532,
+    0.054058190934963536
+   ],
+   "p_fail_given_disagree": 0.4552435025065372,
+   "p_fail_given_disagree_wilson95": [
+    0.4526214591594466,
+    0.4578680297350728
+   ],
+   "p_fail_given_agree": 0.05253483901153853,
+   "p_fail_given_agree_wilson95": [
+    0.05246419033560518,
+    0.052605577541722466
+   ],
+   "recall": 0.03040054257224006,
+   "recall_wilson95": [
+    0.030167697737099538,
+    0.030635127815826984
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 2076418,
+   "ler_lighter_own_weight": 0.05407338541666667,
+   "ler_lighter_own_weight_wilson95": [
+    0.05400189627261224,
+    0.054144963783195645
+   ],
+   "twin_lighter_own_weight": 11135443,
+   "own_weight_ties": 41088
+  },
+  {
+   "family": "nvidia",
+   "distance": 11,
+   "basis": "X",
+   "p": 0.008,
+   "shots": 38400000,
+   "fail": 3705923,
+   "fail_twin": 3725946,
+   "disagree": 264715,
+   "fail_and_disagree": 122346,
+   "fail_and_agree": 3583577,
+   "conclusive": true,
+   "disagree_rate": 0.006893619791666666,
+   "disagree_rate_wilson95": [
+    0.006867498578355803,
+    0.006919839667335898
+   ],
+   "ler_mwpm": 0.09650841145833333,
+   "ler_mwpm_wilson95": [
+    0.0964150543529207,
+    0.09660184929567987
+   ],
+   "p_fail_given_disagree": 0.46218008046389514,
+   "p_fail_given_disagree_wilson95": [
+    0.4602813548988743,
+    0.46407990371430935
+   ],
+   "p_fail_given_agree": 0.09397011193177132,
+   "p_fail_given_agree_wilson95": [
+    0.09387754265371846,
+    0.09406276301355325
+   ],
+   "recall": 0.03301363789803512,
+   "recall_wilson95": [
+    0.03283220800954366,
+    0.03319603595178472
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 3711225,
+   "ler_lighter_own_weight": 0.096646484375,
+   "ler_lighter_own_weight_wilson95": [
+    0.09655306761054226,
+    0.09673998184376557
+   ],
+   "twin_lighter_own_weight": 10746666,
+   "own_weight_ties": 17815
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.002,
+   "shots": 76800000,
+   "fail": 1020,
+   "fail_twin": 1024,
+   "disagree": 44,
+   "fail_and_disagree": 20,
+   "fail_and_agree": 1000,
+   "conclusive": false,
+   "disagree_rate": 5.729166666666667e-07,
+   "disagree_rate_wilson95": [
+    4.2680349954896393e-07,
+    7.690506073000839e-07
+   ],
+   "ler_mwpm": 1.328125e-05,
+   "ler_mwpm_wilson95": [
+    1.2490811516133266e-05,
+    1.4121707986019665e-05
+   ],
+   "p_fail_given_disagree": 0.45454545454545453,
+   "p_fail_given_disagree_wilson95": [
+    0.3170500778685361,
+    0.599340678293465
+   ],
+   "p_fail_given_agree": 1.3020840793190038e-05,
+   "p_fail_given_agree_wilson95": [
+    1.2238428342479879e-05,
+    1.3853272800761936e-05
+   ],
+   "recall": 0.0196078431372549,
+   "recall_wilson95": [
+    0.012728300839939683,
+    0.030092385484976197
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 1024,
+   "ler_lighter_own_weight": 1.3333333333333333e-05,
+   "ler_lighter_own_weight_wilson95": [
+    1.254129901566749e-05,
+    1.4175387147941605e-05
+   ],
+   "twin_lighter_own_weight": 26118634,
+   "own_weight_ties": 3818854
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.003,
+   "shots": 38400000,
+   "fail": 8774,
+   "fail_twin": 8864,
+   "disagree": 388,
+   "fail_and_disagree": 149,
+   "fail_and_agree": 8625,
+   "conclusive": true,
+   "disagree_rate": 1.0104166666666667e-05,
+   "disagree_rate_wilson95": [
+    9.147543875803229e-06,
+    1.1160829092513294e-05
+   ],
+   "ler_mwpm": 0.00022848958333333334,
+   "ler_mwpm_wilson95": [
+    0.0002237588121894273,
+    0.00023332035041694475
+   ],
+   "p_fail_given_disagree": 0.38402061855670105,
+   "p_fail_given_disagree_wilson95": [
+    0.3369870616222016,
+    0.433328290295512
+   ],
+   "p_fail_given_agree": 0.00022461164451349143,
+   "p_fail_given_agree_wilson95": [
+    0.00021992158000511965,
+    0.00022940170674787312
+   ],
+   "recall": 0.01698199224982904,
+   "recall_wilson95": [
+    0.014482184903232997,
+    0.01990458279601553
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 8798,
+   "ler_lighter_own_weight": 0.00022911458333333334,
+   "ler_lighter_own_weight_wilson95": [
+    0.0002243772802540858,
+    0.0002339518822272342
+   ],
+   "twin_lighter_own_weight": 12417199,
+   "own_weight_ties": 527062
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.004,
+   "shots": 38400000,
+   "fail": 63679,
+   "fail_twin": 64034,
+   "disagree": 3043,
+   "fail_and_disagree": 1344,
+   "fail_and_agree": 62335,
+   "conclusive": true,
+   "disagree_rate": 7.924479166666667e-05,
+   "disagree_rate_wilson95": [
+    7.647884055913496e-05,
+    8.211076857529625e-05
+   ],
+   "ler_mwpm": 0.0016583072916666667,
+   "ler_mwpm_wilson95": [
+    0.001645487524170331,
+    0.001671226769020043
+   ],
+   "p_fail_given_disagree": 0.4416694051922445,
+   "p_fail_given_disagree_wilson95": [
+    0.4241098262934719,
+    0.4593760759601931
+   ],
+   "p_fail_given_agree": 0.0016234359405095566,
+   "p_fail_given_agree_wilson95": [
+    0.0016107514833682566,
+    0.0016362201223877387
+   ],
+   "recall": 0.021105859074420138,
+   "recall_wilson95": [
+    0.020017988514963315,
+    0.022251507197991807
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 63762,
+   "ler_lighter_own_weight": 0.00166046875,
+   "ler_lighter_own_weight_wilson95": [
+    0.001647640611872916,
+    0.001673396597551653
+   ],
+   "twin_lighter_own_weight": 11607126,
+   "own_weight_ties": 149626
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.005,
+   "shots": 38400000,
+   "fail": 277405,
+   "fail_twin": 279241,
+   "disagree": 14138,
+   "fail_and_disagree": 6151,
+   "fail_and_agree": 271254,
+   "conclusive": true,
+   "disagree_rate": 0.0003681770833333333,
+   "disagree_rate_wilson95": [
+    0.00036215895537539204,
+    0.0003742951792818422
+   ],
+   "ler_mwpm": 0.007224088541666666,
+   "ler_mwpm_wilson95": [
+    0.007197351811778457,
+    0.007250923867791962
+   ],
+   "p_fail_given_disagree": 0.43506860942141745,
+   "p_fail_given_disagree_wilson95": [
+    0.4269151422113348,
+    0.44325735356884693
+   ],
+   "p_fail_given_agree": 0.0070665079762960645,
+   "p_fail_given_agree_wilson95": [
+    0.00704005805360479,
+    0.007093056563079522
+   ],
+   "recall": 0.022173356644617077,
+   "recall_wilson95": [
+    0.021631981633482816,
+    0.022727965688398077
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 277845,
+   "ler_lighter_own_weight": 0.007235546875,
+   "ler_lighter_own_weight_wilson95": [
+    0.007208789064114788,
+    0.007262403279829677
+   ],
+   "twin_lighter_own_weight": 10867902,
+   "own_weight_ties": 48518
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.006,
+   "shots": 38400000,
+   "fail": 854073,
+   "fail_twin": 859090,
+   "disagree": 45747,
+   "fail_and_disagree": 20365,
+   "fail_and_agree": 833708,
+   "conclusive": true,
+   "disagree_rate": 0.001191328125,
+   "disagree_rate_wilson95": [
+    0.0011804673463723665,
+    0.0012022887069194127
+   ],
+   "ler_mwpm": 0.022241484375,
+   "ler_mwpm_wilson95": [
+    0.022194888969123753,
+    0.02228817537238301
+   ],
+   "p_fail_given_disagree": 0.4451658032220692,
+   "p_fail_given_disagree_wilson95": [
+    0.4406163421904758,
+    0.44972447287335043
+   ],
+   "p_fail_given_agree": 0.0217370417825632,
+   "p_fail_given_agree_wilson95": [
+    0.021690939065411315,
+    0.021783240306289454
+   ],
+   "recall": 0.023844565979723044,
+   "recall_wilson95": [
+    0.023523135424462455,
+    0.024170279987306035
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 855309,
+   "ler_lighter_own_weight": 0.022273671875,
+   "ler_lighter_own_weight_wilson95": [
+    0.02222704349581868,
+    0.022320395839247907
+   ],
+   "twin_lighter_own_weight": 10253056,
+   "own_weight_ties": 17483
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.007,
+   "shots": 38400000,
+   "fail": 2042716,
+   "fail_twin": 2053415,
+   "disagree": 119709,
+   "fail_and_disagree": 54505,
+   "fail_and_agree": 1988211,
+   "conclusive": true,
+   "disagree_rate": 0.003117421875,
+   "disagree_rate_wilson95": [
+    0.003099839162593606,
+    0.003135104005318954
+   ],
+   "ler_mwpm": 0.053195729166666664,
+   "ler_mwpm_wilson95": [
+    0.053124790103961504,
+    0.053266757627450735
+   ],
+   "p_fail_given_disagree": 0.4553124660635374,
+   "p_fail_given_disagree_wilson95": [
+    0.4524928276007648,
+    0.4581349725833719
+   ],
+   "p_fail_given_agree": 0.051938241535311215,
+   "p_fail_given_agree_wilson95": [
+    0.05186799052540047,
+    0.05200858247525298
+   ],
+   "recall": 0.026682612756741515,
+   "recall_wilson95": [
+    0.026462500686010186,
+    0.02690450509712882
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 2045461,
+   "ler_lighter_own_weight": 0.053267213541666664,
+   "ler_lighter_own_weight_wilson95": [
+    0.05319622947539746,
+    0.05333828699171194
+   ],
+   "twin_lighter_own_weight": 9744640,
+   "own_weight_ties": 7996
+  },
+  {
+   "family": "nvidia",
+   "distance": 13,
+   "basis": "X",
+   "p": 0.008,
+   "shots": 38400000,
+   "fail": 3982018,
+   "fail_twin": 4001365,
+   "disagree": 258079,
+   "fail_and_disagree": 119366,
+   "fail_and_agree": 3862652,
+   "conclusive": true,
+   "disagree_rate": 0.006720807291666667,
+   "disagree_rate_wilson95": [
+    0.006695013955982963,
+    0.006746699324285637
+   ],
+   "ler_mwpm": 0.10369838541666666,
+   "ler_mwpm_wilson95": [
+    0.10360199697417649,
+    0.10379485315249695
+   ],
+   "p_fail_given_disagree": 0.46251729121703045,
+   "p_fail_given_disagree_wilson95": [
+    0.4605942137595067,
+    0.4644414845455138
+   ],
+   "p_fail_given_agree": 0.10127051545201407,
+   "p_fail_given_agree_wilson95": [
+    0.10117481177810705,
+    0.10136629944484543
+   ],
+   "recall": 0.029976258269048508,
+   "recall_wilson95": [
+    0.02980922293101724,
+    0.030144200504770485
+   ],
+   "decodes_per_shot": 2,
+   "fail_lighter_own_weight": 3986340,
+   "ler_lighter_own_weight": 0.1038109375,
+   "ler_lighter_own_weight_wilson95": [
+    0.10371450278782751,
+    0.10390745148299282
+   ],
+   "twin_lighter_own_weight": 9319808,
+   "own_weight_ties": 3037
+  }
+ ],
+ "note": "Ensemble columns renamed on 2026-10-21: this run implemented 'keep the decode with the smaller own reported weight' (twin weighed under sigma-permuted weights), not the specified true-weight rule. Correct ensemble: results/phase2_ensemble.json."
+}
