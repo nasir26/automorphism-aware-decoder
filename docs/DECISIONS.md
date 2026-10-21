@@ -53,3 +53,16 @@ Each entry: date, decision, reason, alternatives considered.
 - **Decision:** on 2026-10-21 you asked for a submittable package with V. N. Prakash as co-author.
   He will be on the paper's author list. The prompt's rule still holds for the LICENSE, the commit
   authorship and `CITATION.cff`, which will not name him unless you say so.
+
+## 2026-10-21: Phase 0 gate approved
+
+- **Decision:** you approved ("i agree and continue") the novelty statement in `docs/PRIOR_ART.md`,
+  the three hypothesis adjustments proposed there, the venv install, pushing each phase to
+  `nasir26/automorphism-aware-decoder`, and continuing. Runs over 30 minutes, `v++ -t hw` builds and
+  card runs are still asked about separately.
+- **Hypothesis changes made (approved):** H5 gains a fourth test policy, Shen and Zhong's
+  weight-preserving relabelling relation; H6 gains a control, a second decode with randomly perturbed
+  weights of equal cost; H3 is recorded as expected null, so its experiment is powered for a small
+  paired effect.
+- **Install:** 31 wheels as resolved, frozen in `docs/env.lock`; tooling versions pinned in
+  `requirements.txt` from the lock.
