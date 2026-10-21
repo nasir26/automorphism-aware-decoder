@@ -1,0 +1,12 @@
+automorphism-aware-decoder
+Copyright 2026 Nasir Ali, Embedded Systems Division, C-DAC Noida.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository contains no third-party source code. At analysis time it imports, from a clone kept
+outside the repository, NVIDIA's Ising-Decoding code (github.com/NVIDIA/Ising-Decoding, Apache
+License 2.0): MemoryCircuit and NoiseModel, used to reproduce NVIDIA's reference decoding graphs.
+No NVIDIA model weights are downloaded or used.
+
+It invokes GraphCrunch (github.com/vaibh-pra/GraphCrunch, MIT License, Copyright 2026 Vaibhav N.
+Prakash) as an external tool, built against nauty (Brendan McKay and Adolfo Piperno, Apache License
+2.0), both outside the repository. See THIRD_PARTY.md.

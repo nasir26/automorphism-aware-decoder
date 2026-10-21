@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.xclbin
+*.xo
+*.pt
+*.safetensors
+*.onnx
+hls/**/proj*/
+hls/**/*.log
+_x/
+.Xil/
+results/**/scratch/
