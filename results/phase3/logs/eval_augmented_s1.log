@@ -1,0 +1,13 @@
+augmented 1 equivariance deviation 23.183712005615234
+augmented 1 plain val {'sdr50': 0.9492540662176907, 't0.5': 0.5, 'best': 0.99}
+augmented 1 tts val {'sdr50': 0.9524159734137356, 't0.5': 0.5, 'best': 0.99}
+augmented 1 5 plain {'sdr50': 627, 't0.5': 1216, 'best': 615} mwpm 615
+augmented 1 5 tts {'sdr50': 619, 't0.5': 1254, 'best': 615} mwpm 615
+augmented 1 7 plain {'sdr50': 322, 't0.5': 826, 'best': 276} mwpm 276
+augmented 1 7 tts {'sdr50': 326, 't0.5': 819, 'best': 277} mwpm 276
+augmented 1 9 plain {'sdr50': 172, 't0.5': 474, 'best': 130} mwpm 128
+augmented 1 9 tts {'sdr50': 158, 't0.5': 480, 'best': 130} mwpm 128
+augmented 1 11 plain {'sdr50': 39, 't0.5': 109, 'best': 18} mwpm 17
+augmented 1 11 tts {'sdr50': 36, 't0.5': 116, 'best': 17} mwpm 17
+augmented 1 13 plain {'sdr50': 16, 't0.5': 81, 'best': 7} mwpm 6
+augmented 1 13 tts {'sdr50': 15, 't0.5': 82, 'best': 7} mwpm 6

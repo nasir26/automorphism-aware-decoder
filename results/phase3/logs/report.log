@@ -1,0 +1,43 @@
+5 baseline/plain [620, 625, 626] mwpm 615 
+5 augmented/plain [621, 627, 622] mwpm 615 diff -1.67e-06 ci -2.59e-05 +2.26e-05
+5 equivariant/plain [620, 616, 617] mwpm 615 diff -3.00e-05 ci -5.31e-05 -6.90e-06
+5 baseline/tts [619, 619, 618] mwpm 615 diff -2.50e-05 ci -4.43e-05 -5.67e-06
+5 augmented/tts [619, 619, 619] mwpm 615 diff -2.33e-05 ci -4.55e-05 -1.18e-06
+7 baseline/plain [324, 333, 333] mwpm 276 
+7 augmented/plain [341, 322, 346] mwpm 276 diff +3.17e-05 ci -6.29e-06 +6.96e-05
+7 equivariant/plain [316, 336, 334] mwpm 276 diff -6.67e-06 ci -4.67e-05 +3.33e-05
+7 baseline/tts [313, 330, 321] mwpm 276 diff -4.33e-05 ci -7.14e-05 -1.52e-05
+7 augmented/tts [334, 326, 333] mwpm 276 diff +5.00e-06 ci -3.03e-05 +4.03e-05
+9 baseline/plain [163, 168, 166] mwpm 128 
+9 augmented/plain [168, 172, 170] mwpm 128 diff +2.17e-05 ci -1.34e-05 +5.67e-05
+9 equivariant/plain [161, 174, 170] mwpm 128 diff +1.33e-05 ci -2.50e-05 +5.17e-05
+9 baseline/tts [162, 164, 167] mwpm 128 diff -6.67e-06 ci -2.98e-05 +1.64e-05
+9 augmented/tts [166, 158, 165] mwpm 128 diff -1.33e-05 ci -4.36e-05 +1.70e-05
+11 baseline/plain [32, 39, 33] mwpm 17 
+11 augmented/plain [33, 39, 33] mwpm 17 diff +3.33e-06 ci -4.24e-05 +4.91e-05
+11 equivariant/plain [28, 42, 32] mwpm 17 diff -6.67e-06 ci -6.05e-05 +4.72e-05
+11 baseline/tts [30, 36, 37] mwpm 17 diff -3.33e-06 ci -3.60e-05 +2.93e-05
+11 augmented/tts [37, 36, 30] mwpm 17 diff -3.33e-06 ci -4.52e-05 +3.85e-05
+13 baseline/plain [17, 18, 13] mwpm 6 
+13 augmented/plain [21, 16, 19] mwpm 6 diff +2.67e-05 ci -6.65e-06 +6.00e-05
+13 equivariant/plain [18, 19, 18] mwpm 6 diff +2.33e-05 ci -1.85e-05 +6.52e-05
+13 baseline/tts [16, 19, 14] mwpm 6 diff +3.33e-06 ci -1.63e-05 +2.29e-05
+13 augmented/tts [19, 15, 16] mwpm 6 diff +6.67e-06 ci -2.26e-05 +3.59e-05
+{
+ "augmented/plain": {
+  "d5": "inconclusive",
+  "d9_11_13": "inconclusive"
+ },
+ "equivariant/plain": {
+  "d5": "inconclusive",
+  "d9_11_13": "inconclusive"
+ },
+ "baseline/tts": {
+  "d5": "beats baseline",
+  "d9_11_13": "inconclusive"
+ },
+ "augmented/tts": {
+  "d5": "beats baseline",
+  "d9_11_13": "inconclusive"
+ }
+}

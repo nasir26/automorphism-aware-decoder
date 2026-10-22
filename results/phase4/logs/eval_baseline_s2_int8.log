@@ -1,0 +1,3 @@
+baseline_s2_int8 val {'sdr50': 0.9535355535578354, 't0.5': 0.5, 'best': 0.99} flip 60200 mismatch {'0.5': 0, '0.9': 0}
+baseline_s2_int8 5 {'sdr50': 621, 't0.5': 1251, 'best': 615} mwpm 615
+baseline_s2_int8 9 {'sdr50': 163, 't0.5': 455, 'best': 128} mwpm 128

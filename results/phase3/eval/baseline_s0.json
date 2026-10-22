@@ -1,0 +1,1764 @@
+{
+ "channels": [
+  [
+   0,
+   0,
+   0
+  ],
+  [
+   -1,
+   -1,
+   1
+  ],
+  [
+   -1,
+   0,
+   0
+  ],
+  [
+   -1,
+   0,
+   2
+  ],
+  [
+   -1,
+   1,
+   1
+  ],
+  [
+   0,
+   -1,
+   -1
+  ],
+  [
+   0,
+   -1,
+   1
+  ]
+ ],
+ "arm": "baseline",
+ "seed": 0,
+ "tier": "T4-SIM",
+ "p": 0.003,
+ "train": {
+  "arm": "baseline",
+  "seed": 0,
+  "d": 5,
+  "rounds": 5,
+  "p": 0.006,
+  "basis": "Z",
+  "family": "stim",
+  "epochs": 20,
+  "shots_per_epoch": 2000000,
+  "batch": 256,
+  "chunk": 100000,
+  "lr": 0.001,
+  "torch_threads": 28,
+  "model": {
+   "offsets": [
+    [
+     -1,
+     -1,
+     1
+    ],
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     -1,
+     0,
+     2
+    ],
+    [
+     -1,
+     1,
+     1
+    ],
+    [
+     0,
+     -1,
+     -1
+    ],
+    [
+     0,
+     -1,
+     1
+    ]
+   ],
+   "depth": 2,
+   "width": 64,
+   "equivariant": false
+  },
+  "n_parameters_free": 118983,
+  "tier": "T4-SIM"
+ },
+ "validation": {
+  "shots": 200000,
+  "seed": 5000001,
+  "mwpm_fails": 667,
+  "variants": {
+   "plain": {
+    "grid": {
+     "0.3": {
+      "fails": 1230,
+      "applied_edges_per_shot": 1.727095,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.002842638888888889,
+      "syndrome_density_reduction": 0.9259453572475278
+     },
+     "0.5": {
+      "fails": 1283,
+      "applied_edges_per_shot": 1.54811,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.0014563888888888888,
+      "syndrome_density_reduction": 0.962059071485688
+     },
+     "0.6": {
+      "fails": 1388,
+      "applied_edges_per_shot": 1.46367,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.0026406944444444446,
+      "syndrome_density_reduction": 0.9312062870644084
+     },
+     "0.7": {
+      "fails": 1325,
+      "applied_edges_per_shot": 1.41162,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.0036781944444444444,
+      "syndrome_density_reduction": 0.9041779887617276
+     },
+     "0.8": {
+      "fails": 978,
+      "applied_edges_per_shot": 1.218815,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.00865875,
+      "syndrome_density_reduction": 0.7744276839244945
+     },
+     "0.85": {
+      "fails": 845,
+      "applied_edges_per_shot": 1.13088,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.010759027777777777,
+      "syndrome_density_reduction": 0.7197125665305
+     },
+     "0.9": {
+      "fails": 752,
+      "applied_edges_per_shot": 1.00082,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.014043958333333334,
+      "syndrome_density_reduction": 0.6341356190999974
+     },
+     "0.925": {
+      "fails": 705,
+      "applied_edges_per_shot": 0.93866,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.015589305555555556,
+      "syndrome_density_reduction": 0.5938772039641504
+     },
+     "0.95": {
+      "fails": 680,
+      "applied_edges_per_shot": 0.81242,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.018503680555555554,
+      "syndrome_density_reduction": 0.5179537371054755
+     },
+     "0.97": {
+      "fails": 670,
+      "applied_edges_per_shot": 0.56324,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.023432986111111113,
+      "syndrome_density_reduction": 0.38953856507596507
+     },
+     "0.98": {
+      "fails": 668,
+      "applied_edges_per_shot": 0.464625,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.025748402777777776,
+      "syndrome_density_reduction": 0.32921878448640807
+     },
+     "0.99": {
+      "fails": 667,
+      "applied_edges_per_shot": 0.22227,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.032211527777777776,
+      "syndrome_density_reduction": 0.16084551174663597
+     }
+    },
+    "operating_points": {
+     "sdr50": 0.9539212291128933,
+     "t0.5": 0.5,
+     "best": 0.99
+    },
+    "sdr50_validation_sdr": 0.49998190876954307
+   },
+   "tts": {
+    "grid": {
+     "0.3": {
+      "fails": 1200,
+      "applied_edges_per_shot": 1.726375,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.0028650694444444444,
+      "syndrome_density_reduction": 0.9253610105037684
+     },
+     "0.5": {
+      "fails": 1350,
+      "applied_edges_per_shot": 1.54001,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.0015078472222222223,
+      "syndrome_density_reduction": 0.9607185113088281
+     },
+     "0.6": {
+      "fails": 1429,
+      "applied_edges_per_shot": 1.459525,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.002681111111111111,
+      "syndrome_density_reduction": 0.930153377451814
+     },
+     "0.7": {
+      "fails": 1325,
+      "applied_edges_per_shot": 1.409675,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.0037000694444444446,
+      "syndrome_density_reduction": 0.9036081150023337
+     },
+     "0.8": {
+      "fails": 994,
+      "applied_edges_per_shot": 1.278365,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.006957222222222222,
+      "syndrome_density_reduction": 0.8187548167901092
+     },
+     "0.85": {
+      "fails": 856,
+      "applied_edges_per_shot": 1.130535,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.010724305555555556,
+      "syndrome_density_reduction": 0.7206171280533473
+     },
+     "0.9": {
+      "fails": 736,
+      "applied_edges_per_shot": 0.986095,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.01440701388888889,
+      "syndrome_density_reduction": 0.624677523817105
+     },
+     "0.925": {
+      "fails": 704,
+      "applied_edges_per_shot": 0.9348,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.015618958333333334,
+      "syndrome_density_reduction": 0.5931047084236387
+     },
+     "0.95": {
+      "fails": 678,
+      "applied_edges_per_shot": 0.814185,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.018429930555555557,
+      "syndrome_density_reduction": 0.5198750257800033
+     },
+     "0.97": {
+      "fails": 669,
+      "applied_edges_per_shot": 0.54856,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.023606597222222223,
+      "syndrome_density_reduction": 0.385015757461728
+     },
+     "0.98": {
+      "fails": 667,
+      "applied_edges_per_shot": 0.450545,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.025874305555555557,
+      "syndrome_density_reduction": 0.32593884440456333
+     },
+     "0.99": {
+      "fails": 667,
+      "applied_edges_per_shot": 0.217935,
+      "sector_density_before": 0.038385694444444445,
+      "sector_density_after": 0.03233194444444445,
+      "syndrome_density_reduction": 0.15770849238540097
+     }
+    },
+    "operating_points": {
+     "sdr50": 0.9542380874045193,
+     "t0.5": 0.5,
+     "best": 0.99
+    },
+    "sdr50_validation_sdr": 0.49996562666213185
+   }
+  },
+  "parameters": 118983,
+  "effective_parameters": 118983,
+  "equivariance_max_deviation_fp32": 24.255155563354492,
+  "equivariance_max_deviation_fp64": 24.255159362310614
+ },
+ "test": [
+  {
+   "distance": 5,
+   "rounds": 5,
+   "shots": 200000,
+   "seed": 6000005,
+   "mwpm_fails": 615,
+   "variants": {
+    "plain": {
+     "forward_seconds": 136.7,
+     "grid": {
+      "0.3": {
+       "fails": 1193,
+       "applied_edges_per_shot": 1.727435,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0028229166666666667,
+       "syndrome_density_reduction": 0.9264959830461583
+      },
+      "0.5": {
+       "fails": 1267,
+       "applied_edges_per_shot": 1.547285,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0014628472222222222,
+       "syndrome_density_reduction": 0.9619099110176463
+      },
+      "0.6": {
+       "fails": 1323,
+       "applied_edges_per_shot": 1.464055,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0026304166666666668,
+       "syndrome_density_reduction": 0.9315083602908336
+      },
+      "0.7": {
+       "fails": 1271,
+       "applied_edges_per_shot": 1.41244,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.003666458333333333,
+       "syndrome_density_reduction": 0.9045315723711691
+      },
+      "0.8": {
+       "fails": 935,
+       "applied_edges_per_shot": 1.22064,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.008609652777777779,
+       "syndrome_density_reduction": 0.7758190770499303
+      },
+      "0.85": {
+       "fails": 789,
+       "applied_edges_per_shot": 1.13363,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.010694444444444444,
+       "syndrome_density_reduction": 0.7215345975180415
+      },
+      "0.9": {
+       "fails": 692,
+       "applied_edges_per_shot": 1.00283,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.014000416666666666,
+       "syndrome_density_reduction": 0.6354526238131317
+      },
+      "0.925": {
+       "fails": 630,
+       "applied_edges_per_shot": 0.93988,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.015570902777777777,
+       "syndrome_density_reduction": 0.5945597986369662
+      },
+      "0.95": {
+       "fails": 621,
+       "applied_edges_per_shot": 0.812745,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.01851076388888889,
+       "syndrome_density_reduction": 0.5180107444248152
+      },
+      "0.97": {
+       "fails": 615,
+       "applied_edges_per_shot": 0.562305,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.023477916666666668,
+       "syndrome_density_reduction": 0.38867441427334093
+      },
+      "0.98": {
+       "fails": 614,
+       "applied_edges_per_shot": 0.46436,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.025782430555555555,
+       "syndrome_density_reduction": 0.32866873647227735
+      },
+      "0.99": {
+       "fails": 615,
+       "applied_edges_per_shot": 0.22058,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.032277708333333335,
+       "syndrome_density_reduction": 0.1595425934531699
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9539212291128933,
+       "fails": 620,
+       "applied_edges_per_shot": 0.783685,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.01920798611111111,
+       "syndrome_density_reduction": 0.49985624675651097,
+       "applied_per_channel": [
+        0.18356,
+        0.0,
+        0.209485,
+        0.001695,
+        0.016605,
+        0.112015,
+        0.260325
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 1267,
+       "applied_edges_per_shot": 1.547285,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0014628472222222222,
+       "syndrome_density_reduction": 0.9619099110176463,
+       "applied_per_channel": [
+        0.38974,
+        0.0597,
+        0.496415,
+        0.0297,
+        0.09638,
+        0.15805,
+        0.3173
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 615,
+       "applied_edges_per_shot": 0.22058,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.032277708333333335,
+       "syndrome_density_reduction": 0.1595425934531699,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.12309,
+        0.0,
+        0.0,
+        0.00832,
+        0.08917
+       ]
+      }
+     }
+    },
+    "tts": {
+     "forward_seconds": 269.7,
+     "grid": {
+      "0.3": {
+       "fails": 1158,
+       "applied_edges_per_shot": 1.72643,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0028296527777777777,
+       "syndrome_density_reduction": 0.9263205860069327
+      },
+      "0.5": {
+       "fails": 1313,
+       "applied_edges_per_shot": 1.53989,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0015093055555555556,
+       "syndrome_density_reduction": 0.9607002139120592
+      },
+      "0.6": {
+       "fails": 1332,
+       "applied_edges_per_shot": 1.459865,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0026804166666666665,
+       "syndrome_density_reduction": 0.9302064441233855
+      },
+      "0.7": {
+       "fails": 1273,
+       "applied_edges_per_shot": 1.41084,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0036756944444444445,
+       "syndrome_density_reduction": 0.904291079523571
+      },
+      "0.8": {
+       "fails": 938,
+       "applied_edges_per_shot": 1.280495,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0069053472222222224,
+       "syndrome_density_reduction": 0.8201963361909188
+      },
+      "0.85": {
+       "fails": 784,
+       "applied_edges_per_shot": 1.13273,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.010677569444444444,
+       "syndrome_density_reduction": 0.7219739942245552
+      },
+      "0.9": {
+       "fails": 674,
+       "applied_edges_per_shot": 0.987775,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.01437076388888889,
+       "syndrome_density_reduction": 0.6258094030895194
+      },
+      "0.925": {
+       "fails": 635,
+       "applied_edges_per_shot": 0.93615,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.015598263888888889,
+       "syndrome_density_reduction": 0.5938473611786681
+      },
+      "0.95": {
+       "fails": 620,
+       "applied_edges_per_shot": 0.814105,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.018447361111111112,
+       "syndrome_density_reduction": 0.5196616464538154
+      },
+      "0.97": {
+       "fails": 615,
+       "applied_edges_per_shot": 0.548495,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.023635069444444445,
+       "syndrome_density_reduction": 0.3845824194303755
+      },
+      "0.98": {
+       "fails": 615,
+       "applied_edges_per_shot": 0.44953,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.025921875,
+       "syndrome_density_reduction": 0.32503783693861643
+      },
+      "0.99": {
+       "fails": 615,
+       "applied_edges_per_shot": 0.21531,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.032424097222222226,
+       "syndrome_density_reduction": 0.1557308722295856
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9542380874045193,
+       "fails": 619,
+       "applied_edges_per_shot": 0.783355,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.019217361111111112,
+       "syndrome_density_reduction": 0.49961213747511435,
+       "applied_per_channel": [
+        0.183605,
+        0.0,
+        0.2092,
+        0.000795,
+        0.01792,
+        0.11293,
+        0.258905
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 1313,
+       "applied_edges_per_shot": 1.53989,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.0015093055555555556,
+       "syndrome_density_reduction": 0.9607002139120592,
+       "applied_per_channel": [
+        0.384015,
+        0.059555,
+        0.496165,
+        0.02955,
+        0.09615,
+        0.15744,
+        0.317015
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 615,
+       "applied_edges_per_shot": 0.21531,
+       "sector_density_before": 0.03840493055555556,
+       "sector_density_after": 0.032424097222222226,
+       "syndrome_density_reduction": 0.1557308722295856,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.13774,
+        0.0,
+        0.0,
+        0.00473,
+        0.07284
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "distance": 7,
+   "rounds": 7,
+   "shots": 200000,
+   "seed": 6000007,
+   "mwpm_fails": 276,
+   "variants": {
+    "plain": {
+     "forward_seconds": 301.8,
+     "grid": {
+      "0.3": {
+       "fails": 817,
+       "applied_edges_per_shot": 4.784165,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.0030391666666666666,
+       "syndrome_density_reduction": 0.9272343192838656
+      },
+      "0.5": {
+       "fails": 816,
+       "applied_edges_per_shot": 4.293595,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.0018062239583333333,
+       "syndrome_density_reduction": 0.9567542256581577
+      },
+      "0.6": {
+       "fails": 802,
+       "applied_edges_per_shot": 4.069725,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.00303546875,
+       "syndrome_density_reduction": 0.9273228571802675
+      },
+      "0.7": {
+       "fails": 732,
+       "applied_edges_per_shot": 3.917565,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.004233125,
+       "syndrome_density_reduction": 0.89864780185967
+      },
+      "0.8": {
+       "fails": 605,
+       "applied_edges_per_shot": 3.442555,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.008821171875,
+       "syndrome_density_reduction": 0.7887978361836925
+      },
+      "0.85": {
+       "fails": 526,
+       "applied_edges_per_shot": 3.187915,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.011162291666666666,
+       "syndrome_density_reduction": 0.7327452421792044
+      },
+      "0.9": {
+       "fails": 430,
+       "applied_edges_per_shot": 2.892285,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.013971484375,
+       "syndrome_density_reduction": 0.6654857457104324
+      },
+      "0.925": {
+       "fails": 394,
+       "applied_edges_per_shot": 2.691675,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.015925729166666666,
+       "syndrome_density_reduction": 0.6186959614872621
+      },
+      "0.95": {
+       "fails": 331,
+       "applied_edges_per_shot": 2.34358,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.019130520833333334,
+       "syndrome_density_reduction": 0.5419647806224215
+      },
+      "0.97": {
+       "fails": 292,
+       "applied_edges_per_shot": 1.70449,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.024362473958333332,
+       "syndrome_density_reduction": 0.4166979978588794
+      },
+      "0.98": {
+       "fails": 280,
+       "applied_edges_per_shot": 1.406345,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.02725770833333333,
+       "syndrome_density_reduction": 0.34737843653298073
+      },
+      "0.99": {
+       "fails": 278,
+       "applied_edges_per_shot": 0.492325,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.03663809895833333,
+       "syndrome_density_reduction": 0.1227870981579754
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9539212291128933,
+       "fails": 324,
+       "applied_edges_per_shot": 2.26779,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.019842604166666666,
+       "syndrome_density_reduction": 0.5249156240082353,
+       "applied_per_channel": [
+        0.320025,
+        5e-06,
+        0.74832,
+        0.00176,
+        0.070895,
+        0.329675,
+        0.79711
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 816,
+       "applied_edges_per_shot": 4.293595,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.0018062239583333333,
+       "syndrome_density_reduction": 0.9567542256581577,
+       "applied_per_channel": [
+        0.7548,
+        0.18721,
+        1.405945,
+        0.120545,
+        0.332115,
+        0.49241,
+        1.00057
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 278,
+       "applied_edges_per_shot": 0.492325,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.03663809895833333,
+       "syndrome_density_reduction": 0.1227870981579754,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.23202,
+        0.0,
+        0.0,
+        0.024095,
+        0.23621
+       ]
+      }
+     }
+    },
+    "tts": {
+     "forward_seconds": 581.4,
+     "grid": {
+      "0.3": {
+       "fails": 816,
+       "applied_edges_per_shot": 4.78077,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.003015572916666667,
+       "syndrome_density_reduction": 0.9277992160031624
+      },
+      "0.5": {
+       "fails": 807,
+       "applied_edges_per_shot": 4.27477,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.0018266145833333333,
+       "syndrome_density_reduction": 0.9562660202153217
+      },
+      "0.6": {
+       "fails": 795,
+       "applied_edges_per_shot": 4.062445,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.00304109375,
+       "syndrome_density_reduction": 0.9271881798167265
+      },
+      "0.7": {
+       "fails": 730,
+       "applied_edges_per_shot": 3.913665,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.004237083333333333,
+       "syndrome_density_reduction": 0.8985530289001411
+      },
+      "0.8": {
+       "fails": 616,
+       "applied_edges_per_shot": 3.521465,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.007964244791666667,
+       "syndrome_density_reduction": 0.8093149349090585
+      },
+      "0.85": {
+       "fails": 527,
+       "applied_edges_per_shot": 3.187285,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.011150078125,
+       "syndrome_density_reduction": 0.7330376666398559
+      },
+      "0.9": {
+       "fails": 424,
+       "applied_edges_per_shot": 2.86282,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.014245651041666666,
+       "syndrome_density_reduction": 0.6589214712504357
+      },
+      "0.925": {
+       "fails": 386,
+       "applied_edges_per_shot": 2.697235,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.0158353125,
+       "syndrome_density_reduction": 0.6208607754049207
+      },
+      "0.95": {
+       "fails": 322,
+       "applied_edges_per_shot": 2.340985,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.019138619791666665,
+       "syndrome_density_reduction": 0.541770870159175
+      },
+      "0.97": {
+       "fails": 288,
+       "applied_edges_per_shot": 1.682845,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.024445078125,
+       "syndrome_density_reduction": 0.4147202358350278
+      },
+      "0.98": {
+       "fails": 276,
+       "applied_edges_per_shot": 1.39652,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.027221276041666666,
+       "syndrome_density_reduction": 0.3482507218644336
+      },
+      "0.99": {
+       "fails": 278,
+       "applied_edges_per_shot": 0.5461,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.03607794270833333,
+       "syndrome_density_reduction": 0.1361987189439301
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9542380874045193,
+       "fails": 313,
+       "applied_edges_per_shot": 2.26184,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.019901302083333332,
+       "syndrome_density_reduction": 0.5235102407794328,
+       "applied_per_channel": [
+        0.320335,
+        0.0,
+        0.74627,
+        0.000765,
+        0.067,
+        0.3338,
+        0.79367
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 807,
+       "applied_edges_per_shot": 4.27477,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.0018266145833333333,
+       "syndrome_density_reduction": 0.9562660202153217,
+       "applied_per_channel": [
+        0.742125,
+        0.186855,
+        1.40537,
+        0.120715,
+        0.3312,
+        0.4897,
+        0.998805
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 278,
+       "applied_edges_per_shot": 0.5461,
+       "sector_density_before": 0.041766484375,
+       "sector_density_after": 0.03607794270833333,
+       "syndrome_density_reduction": 0.1361987189439301,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.276345,
+        0.0,
+        0.0,
+        0.020195,
+        0.24956
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "distance": 9,
+   "rounds": 9,
+   "shots": 200000,
+   "seed": 6000009,
+   "mwpm_fails": 128,
+   "variants": {
+    "plain": {
+     "forward_seconds": 573.7,
+     "grid": {
+      "0.3": {
+       "fails": 479,
+       "applied_edges_per_shot": 10.186825,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0031632,
+       "syndrome_density_reduction": 0.927777895108763
+      },
+      "0.5": {
+       "fails": 479,
+       "applied_edges_per_shot": 9.157425,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.002038175,
+       "syndrome_density_reduction": 0.9534644383419648
+      },
+      "0.6": {
+       "fails": 436,
+       "applied_edges_per_shot": 8.68825,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.003310175,
+       "syndrome_density_reduction": 0.924422165510132
+      },
+      "0.7": {
+       "fails": 401,
+       "applied_edges_per_shot": 8.35634,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.00460805,
+       "syndrome_density_reduction": 0.8947891153123214
+      },
+      "0.8": {
+       "fails": 319,
+       "applied_edges_per_shot": 7.424235,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.008940025,
+       "syndrome_density_reduction": 0.795881568259901
+      },
+      "0.85": {
+       "fails": 269,
+       "applied_edges_per_shot": 6.86692,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0114530875,
+       "syndrome_density_reduction": 0.7385033868381652
+      },
+      "0.9": {
+       "fails": 224,
+       "applied_edges_per_shot": 6.272245,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0142005875,
+       "syndrome_density_reduction": 0.6757725341609164
+      },
+      "0.925": {
+       "fails": 192,
+       "applied_edges_per_shot": 5.82204,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0163414,
+       "syndrome_density_reduction": 0.6268935556178361
+      },
+      "0.95": {
+       "fails": 165,
+       "applied_edges_per_shot": 5.08602,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.019701975,
+       "syndrome_density_reduction": 0.5501649895629332
+      },
+      "0.97": {
+       "fails": 137,
+       "applied_edges_per_shot": 3.73395,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.025342275,
+       "syndrome_density_reduction": 0.4213857981687614
+      },
+      "0.98": {
+       "fails": 133,
+       "applied_edges_per_shot": 3.061045,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.028579025,
+       "syndrome_density_reduction": 0.34748440147974036
+      },
+      "0.99": {
+       "fails": 129,
+       "applied_edges_per_shot": 0.871295,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.03944175,
+       "syndrome_density_reduction": 0.09946693045209032
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9539212291128933,
+       "fails": 163,
+       "applied_edges_per_shot": 4.908195,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.020528375,
+       "syndrome_density_reduction": 0.5312966450124406,
+       "applied_per_channel": [
+        0.49538,
+        1e-05,
+        1.75014,
+        0.001785,
+        0.167235,
+        0.70689,
+        1.786755
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 479,
+       "applied_edges_per_shot": 9.157425,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.002038175,
+       "syndrome_density_reduction": 0.9534644383419648,
+       "applied_per_channel": [
+        1.23681,
+        0.425535,
+        3.032075,
+        0.29923,
+        0.78188,
+        1.0935,
+        2.288395
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 129,
+       "applied_edges_per_shot": 0.871295,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.03944175,
+       "syndrome_density_reduction": 0.09946693045209032,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.37719,
+        0.0,
+        5e-06,
+        0.040875,
+        0.453225
+       ]
+      }
+     }
+    },
+    "tts": {
+     "forward_seconds": 961.8,
+     "grid": {
+      "0.3": {
+       "fails": 500,
+       "applied_edges_per_shot": 10.179435,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0031238375,
+       "syndrome_density_reduction": 0.9286766187442528
+      },
+      "0.5": {
+       "fails": 481,
+       "applied_edges_per_shot": 9.11879,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0020435625,
+       "syndrome_density_reduction": 0.9533414310739762
+      },
+      "0.6": {
+       "fails": 458,
+       "applied_edges_per_shot": 8.68195,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0032805125,
+       "syndrome_density_reduction": 0.9250994189833035
+      },
+      "0.7": {
+       "fails": 402,
+       "applied_edges_per_shot": 8.35418,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.00458335,
+       "syndrome_density_reduction": 0.8953530651070906
+      },
+      "0.8": {
+       "fails": 327,
+       "applied_edges_per_shot": 7.522265,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0084192125,
+       "syndrome_density_reduction": 0.8077727464982885
+      },
+      "0.85": {
+       "fails": 258,
+       "applied_edges_per_shot": 6.86692,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0114405625,
+       "syndrome_density_reduction": 0.7387893573312617
+      },
+      "0.9": {
+       "fails": 226,
+       "applied_edges_per_shot": 6.2226,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.014424025,
+       "syndrome_density_reduction": 0.6706710146358671
+      },
+      "0.925": {
+       "fails": 194,
+       "applied_edges_per_shot": 5.83313,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0162657875,
+       "syndrome_density_reduction": 0.6286199383650821
+      },
+      "0.95": {
+       "fails": 162,
+       "applied_edges_per_shot": 5.0803,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.01971005,
+       "syndrome_density_reduction": 0.5499806213607972
+      },
+      "0.97": {
+       "fails": 141,
+       "applied_edges_per_shot": 3.714775,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.02534005,
+       "syndrome_density_reduction": 0.4214365993142417
+      },
+      "0.98": {
+       "fails": 134,
+       "applied_edges_per_shot": 3.060235,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.028498675,
+       "syndrome_density_reduction": 0.34931895071090213
+      },
+      "0.99": {
+       "fails": 128,
+       "applied_edges_per_shot": 0.972885,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0389338,
+       "syndrome_density_reduction": 0.11106443240565123
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9542380874045193,
+       "fails": 162,
+       "applied_edges_per_shot": 4.89249,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0206033,
+       "syndrome_density_reduction": 0.5295859592483485,
+       "applied_per_channel": [
+        0.49663,
+        0.0,
+        1.745595,
+        0.00082,
+        0.15578,
+        0.713565,
+        1.7801
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 481,
+       "applied_edges_per_shot": 9.11879,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0020435625,
+       "syndrome_density_reduction": 0.9533414310739762,
+       "applied_per_channel": [
+        1.212365,
+        0.42445,
+        3.029605,
+        0.299785,
+        0.77902,
+        1.088415,
+        2.28515
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 128,
+       "applied_edges_per_shot": 0.972885,
+       "sector_density_before": 0.043798225,
+       "sector_density_after": 0.0389338,
+       "syndrome_density_reduction": 0.11106443240565123,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.45893,
+        0.0,
+        0.0,
+        0.033185,
+        0.48077
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "distance": 11,
+   "rounds": 11,
+   "shots": 100000,
+   "seed": 6000011,
+   "mwpm_fails": 17,
+   "variants": {
+    "plain": {
+     "forward_seconds": 379.0,
+     "grid": {
+      "0.3": {
+       "fails": 131,
+       "applied_edges_per_shot": 18.58164,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.0032086111111111113,
+       "syndrome_density_reduction": 0.9289289942139058
+      },
+      "0.5": {
+       "fails": 119,
+       "applied_edges_per_shot": 16.74035,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.0021765694444444445,
+       "syndrome_density_reduction": 0.9517888038708502
+      },
+      "0.6": {
+       "fails": 120,
+       "applied_edges_per_shot": 15.90751,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.0034553333333333333,
+       "syndrome_density_reduction": 0.923464076255356
+      },
+      "0.7": {
+       "fails": 106,
+       "applied_edges_per_shot": 15.29389,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.004831208333333333,
+       "syndrome_density_reduction": 0.8929883293668276
+      },
+      "0.8": {
+       "fails": 66,
+       "applied_edges_per_shot": 13.68892,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.00899,
+       "syndrome_density_reduction": 0.8008707444151024
+      },
+      "0.85": {
+       "fails": 54,
+       "applied_edges_per_shot": 12.65707,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.011612194444444444,
+       "syndrome_density_reduction": 0.7427889170823909
+      },
+      "0.9": {
+       "fails": 46,
+       "applied_edges_per_shot": 11.59081,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.014378916666666667,
+       "syndrome_density_reduction": 0.6815057873247374
+      },
+      "0.925": {
+       "fails": 38,
+       "applied_edges_per_shot": 10.74231,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.016642291666666666,
+       "syndrome_density_reduction": 0.6313718408442628
+      },
+      "0.95": {
+       "fails": 33,
+       "applied_edges_per_shot": 9.38831,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.020141375,
+       "syndrome_density_reduction": 0.5538668509225511
+      },
+      "0.97": {
+       "fails": 26,
+       "applied_edges_per_shot": 6.90054,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.026124611111111112,
+       "syndrome_density_reduction": 0.4213376681868187
+      },
+      "0.98": {
+       "fails": 20,
+       "applied_edges_per_shot": 5.61495,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.02960901388888889,
+       "syndrome_density_reduction": 0.344157853804523
+      },
+      "0.99": {
+       "fails": 18,
+       "applied_edges_per_shot": 1.36819,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.04134602777777778,
+       "syndrome_density_reduction": 0.08418200970173684
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9539212291128933,
+       "fails": 32,
+       "applied_edges_per_shot": 9.03539,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.021067458333333334,
+       "syndrome_density_reduction": 0.5333540272544479,
+       "applied_per_channel": [
+        0.71063,
+        3e-05,
+        3.35697,
+        0.00192,
+        0.31627,
+        1.2948,
+        3.35477
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 119,
+       "applied_edges_per_shot": 16.74035,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.0021765694444444445,
+       "syndrome_density_reduction": 0.9517888038708502,
+       "applied_per_channel": [
+        1.83625,
+        0.80694,
+        5.577,
+        0.60546,
+        1.52374,
+        2.05002,
+        4.34094
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 18,
+       "applied_edges_per_shot": 1.36819,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.04134602777777778,
+       "syndrome_density_reduction": 0.08418200970173684,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.5527,
+        0.0,
+        0.0,
+        0.05861,
+        0.75688
+       ]
+      }
+     }
+    },
+    "tts": {
+     "forward_seconds": 769.3,
+     "grid": {
+      "0.3": {
+       "fails": 125,
+       "applied_edges_per_shot": 18.56859,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.003155638888888889,
+       "syndrome_density_reduction": 0.9301023333882984
+      },
+      "0.5": {
+       "fails": 120,
+       "applied_edges_per_shot": 16.67784,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.002166597222222222,
+       "syndrome_density_reduction": 0.9520096894312104
+      },
+      "0.6": {
+       "fails": 113,
+       "applied_edges_per_shot": 15.9014,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.003418361111111111,
+       "syndrome_density_reduction": 0.9242830140849924
+      },
+      "0.7": {
+       "fails": 102,
+       "applied_edges_per_shot": 15.2985,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.0047825,
+       "syndrome_density_reduction": 0.894067223043963
+      },
+      "0.8": {
+       "fails": 68,
+       "applied_edges_per_shot": 13.81399,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.008614375,
+       "syndrome_density_reduction": 0.8091908697353557
+      },
+      "0.85": {
+       "fails": 52,
+       "applied_edges_per_shot": 12.65574,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.011606347222222223,
+       "syndrome_density_reduction": 0.7429184335460561
+      },
+      "0.9": {
+       "fails": 51,
+       "applied_edges_per_shot": 11.51398,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.0145735,
+       "syndrome_density_reduction": 0.6771957501372075
+      },
+      "0.925": {
+       "fails": 37,
+       "applied_edges_per_shot": 10.75535,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.016592819444444445,
+       "syndrome_density_reduction": 0.6324676547244898
+      },
+      "0.95": {
+       "fails": 30,
+       "applied_edges_per_shot": 9.37624,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.020156277777777776,
+       "syndrome_density_reduction": 0.5535367531422356
+      },
+      "0.97": {
+       "fails": 26,
+       "applied_edges_per_shot": 6.88779,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.026087555555555555,
+       "syndrome_density_reduction": 0.42215845185679235
+      },
+      "0.98": {
+       "fails": 19,
+       "applied_edges_per_shot": 5.62747,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.029515333333333334,
+       "syndrome_density_reduction": 0.34623288598367297
+      },
+      "0.99": {
+       "fails": 17,
+       "applied_edges_per_shot": 1.5227,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.04091683333333333,
+       "syndrome_density_reduction": 0.09368870271879981
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9542380874045193,
+       "fails": 30,
+       "applied_edges_per_shot": 8.99964,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.021164083333333333,
+       "syndrome_density_reduction": 0.531213775383381,
+       "applied_per_channel": [
+        0.71456,
+        1e-05,
+        3.34603,
+        0.0009,
+        0.29163,
+        1.30335,
+        3.34316
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 120,
+       "applied_edges_per_shot": 16.67784,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.002166597222222222,
+       "syndrome_density_reduction": 0.9520096894312104,
+       "applied_per_channel": [
+        1.79639,
+        0.80541,
+        5.57152,
+        0.60613,
+        1.52027,
+        2.04302,
+        4.3351
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 17,
+       "applied_edges_per_shot": 1.5227,
+       "sector_density_before": 0.04514655555555556,
+       "sector_density_after": 0.04091683333333333,
+       "syndrome_density_reduction": 0.09368870271879981,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.68468,
+        0.0,
+        0.0,
+        0.04569,
+        0.79233
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "distance": 13,
+   "rounds": 13,
+   "shots": 100000,
+   "seed": 6000013,
+   "mwpm_fails": 6,
+   "variants": {
+    "plain": {
+     "forward_seconds": 593.7,
+     "grid": {
+      "0.3": {
+       "fails": 80,
+       "applied_edges_per_shot": 30.73718,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.0032869132653061224,
+       "syndrome_density_reduction": 0.9288411617855163
+      },
+      "0.5": {
+       "fails": 77,
+       "applied_edges_per_shot": 27.68909,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.002335076530612245,
+       "syndrome_density_reduction": 0.949447606417202
+      },
+      "0.6": {
+       "fails": 75,
+       "applied_edges_per_shot": 26.32017,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.0036405272108843536,
+       "syndrome_density_reduction": 0.9211857247499902
+      },
+      "0.7": {
+       "fails": 62,
+       "applied_edges_per_shot": 25.28358,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.005067236394557823,
+       "syndrome_density_reduction": 0.8902987010333229
+      },
+      "0.8": {
+       "fails": 49,
+       "applied_edges_per_shot": 22.74459,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.009105986394557824,
+       "syndrome_density_reduction": 0.8028632457469845
+      },
+      "0.85": {
+       "fails": 48,
+       "applied_edges_per_shot": 21.01721,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.011821845238095239,
+       "syndrome_density_reduction": 0.7440672434001885
+      },
+      "0.9": {
+       "fails": 30,
+       "applied_edges_per_shot": 19.24621,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.014659591836734693,
+       "syndrome_density_reduction": 0.6826324762471587
+      },
+      "0.925": {
+       "fails": 28,
+       "applied_edges_per_shot": 17.80899,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.017023690476190477,
+       "syndrome_density_reduction": 0.631451779030785
+      },
+      "0.95": {
+       "fails": 18,
+       "applied_edges_per_shot": 15.53496,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.02066795918367347,
+       "syndrome_density_reduction": 0.5525565036053363
+      },
+      "0.97": {
+       "fails": 13,
+       "applied_edges_per_shot": 11.41656,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.026880501700680272,
+       "syndrome_density_reduction": 0.4180603145715449
+      },
+      "0.98": {
+       "fails": 9,
+       "applied_edges_per_shot": 9.23983,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.03052044217687075,
+       "syndrome_density_reduction": 0.3392587416217745
+      },
+      "0.99": {
+       "fails": 6,
+       "applied_edges_per_shot": 1.96982,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.04284118197278912,
+       "syndrome_density_reduction": 0.0725253479924014
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9539212291128933,
+       "fails": 17,
+       "applied_edges_per_shot": 14.92255,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.021660697278911564,
+       "syndrome_density_reduction": 0.5310645797830558,
+       "applied_per_channel": [
+        0.95847,
+        0.0,
+        5.66764,
+        0.002,
+        0.52233,
+        2.13086,
+        5.64125
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 77,
+       "applied_edges_per_shot": 27.68909,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.002335076530612245,
+       "syndrome_density_reduction": 0.949447606417202,
+       "applied_per_channel": [
+        2.56368,
+        1.37033,
+        9.23552,
+        1.0627,
+        2.62312,
+        3.45201,
+        7.38173
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 6,
+       "applied_edges_per_shot": 1.96982,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.04284118197278912,
+       "syndrome_density_reduction": 0.0725253479924014,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.74476,
+        0.0,
+        1e-05,
+        0.0771,
+        1.14795
+       ]
+      }
+     }
+    },
+    "tts": {
+     "forward_seconds": 1199.3,
+     "grid": {
+      "0.3": {
+       "fails": 74,
+       "applied_edges_per_shot": 30.71397,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.0032318707482993196,
+       "syndrome_density_reduction": 0.9300327848210089
+      },
+      "0.5": {
+       "fails": 70,
+       "applied_edges_per_shot": 27.59835,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.002300357142857143,
+       "syndrome_density_reduction": 0.9501992512270145
+      },
+      "0.6": {
+       "fails": 83,
+       "applied_edges_per_shot": 26.31522,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.0035912159863945576,
+       "syndrome_density_reduction": 0.9222532702440149
+      },
+      "0.7": {
+       "fails": 61,
+       "applied_edges_per_shot": 25.29752,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.005008554421768708,
+       "syndrome_density_reduction": 0.8915691151485607
+      },
+      "0.8": {
+       "fails": 51,
+       "applied_edges_per_shot": 22.89645,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.008822457482993198,
+       "syndrome_density_reduction": 0.8090014022234916
+      },
+      "0.85": {
+       "fails": 50,
+       "applied_edges_per_shot": 21.00186,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.011839574829931972,
+       "syndrome_density_reduction": 0.7436834130233922
+      },
+      "0.9": {
+       "fails": 36,
+       "applied_edges_per_shot": 19.14336,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.014819353741496599,
+       "syndrome_density_reduction": 0.6791737687559127
+      },
+      "0.925": {
+       "fails": 22,
+       "applied_edges_per_shot": 17.83264,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.016973741496598638,
+       "syndrome_density_reduction": 0.6325331313728959
+      },
+      "0.95": {
+       "fails": 17,
+       "applied_edges_per_shot": 15.52481,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.02066761904761905,
+       "syndrome_density_reduction": 0.5525638672576488
+      },
+      "0.97": {
+       "fails": 11,
+       "applied_edges_per_shot": 11.4119,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.026834243197278913,
+       "syndrome_density_reduction": 0.4190617712860637
+      },
+      "0.98": {
+       "fails": 10,
+       "applied_edges_per_shot": 9.25754,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.03044766156462585,
+       "syndrome_density_reduction": 0.3408343791253712
+      },
+      "0.99": {
+       "fails": 6,
+       "applied_edges_per_shot": 2.18658,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.0424725425170068,
+       "syndrome_density_reduction": 0.08050607436883839
+      }
+     },
+     "operating_points": {
+      "sdr50": {
+       "threshold": 0.9542380874045193,
+       "fails": 16,
+       "applied_edges_per_shot": 14.87142,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.021746190476190475,
+       "syndrome_density_reduction": 0.5292137257742743,
+       "applied_per_channel": [
+        0.96645,
+        0.0,
+        5.65057,
+        0.00088,
+        0.48052,
+        2.14576,
+        5.62724
+       ]
+      },
+      "t0.5": {
+       "threshold": 0.5,
+       "fails": 70,
+       "applied_edges_per_shot": 27.59835,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.002300357142857143,
+       "syndrome_density_reduction": 0.9501992512270145,
+       "applied_per_channel": [
+        2.50385,
+        1.36803,
+        9.22755,
+        1.06632,
+        2.61696,
+        3.44129,
+        7.37435
+       ]
+      },
+      "best": {
+       "threshold": 0.99,
+       "fails": 6,
+       "applied_edges_per_shot": 2.18658,
+       "sector_density_before": 0.04619121598639456,
+       "sector_density_after": 0.0424725425170068,
+       "syndrome_density_reduction": 0.08050607436883839,
+       "applied_per_channel": [
+        0.0,
+        0.0,
+        0.93851,
+        0.0,
+        0.0,
+        0.0585,
+        1.18957
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "seconds": 6915.1
+}

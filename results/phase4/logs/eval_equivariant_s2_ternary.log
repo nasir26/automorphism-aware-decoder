@@ -1,0 +1,3 @@
+equivariant_s2_ternary val {'sdr50': 0.9907718845140889, 't0.5': 0.5, 'best': 0.99} flip 0 mismatch {'0.5': 0, '0.9': 0}
+equivariant_s2_ternary 5 {'sdr50': 1037, 't0.5': 2419, 'best': 1038} mwpm 615
+equivariant_s2_ternary 9 {'sdr50': 241, 't0.5': 789, 'best': 247} mwpm 128

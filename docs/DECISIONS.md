@@ -271,3 +271,13 @@ Each entry: date, decision, reason, alternatives considered.
   Phase 3 protocol at d = 5 and 9 (200,000 test shots each, the Phase 3 test shots). Augmented and
   TTS variants are not quantized. Started automatically after the Phase 3 report
   (`results/phase4_chain.sh`, `bench/phase4_launch.sh`), about 2 to 2.5 h.
+
+## 2026-10-22: Phase 3 and 4 results recorded, no protocol change
+
+- The Phase 3 protocol was applied unchanged; verdicts are in `results/phase3/report.json` and H3 in
+  `docs/HYPOTHESES.md`. Derived numbers (ratio to PyMatching alone, log10 LER slope over d = 5 to 13,
+  per-channel profile means) come from `bench/plot_phase3.py` into `results/phase3/summary.json`.
+- One fake-quant vs golden decision mismatch (baseline s1 ternary, t = 0.5, 1 of 1,000 x 301
+  decisions) was traced before any code change: the integer accumulator equals the threshold exactly
+  (0), the golden rule (strict >) does not apply the edge, and the FP64 fake-quantized logit is
+  2.2e-16. The golden model is the reference; no code was changed.

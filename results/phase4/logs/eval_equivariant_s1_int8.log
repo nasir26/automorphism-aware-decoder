@@ -1,0 +1,3 @@
+equivariant_s1_int8 val {'sdr50': 0.955554792212046, 't0.5': 0.5, 'best': 0.99} flip 0 mismatch {'0.5': 0, '0.9': 0}
+equivariant_s1_int8 5 {'sdr50': 619, 't0.5': 1235, 'best': 615} mwpm 615
+equivariant_s1_int8 9 {'sdr50': 167, 't0.5': 450, 'best': 131} mwpm 128

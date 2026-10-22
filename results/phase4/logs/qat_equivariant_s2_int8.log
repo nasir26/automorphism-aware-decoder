@@ -1,0 +1,3 @@
+qat int8 seed 2 epoch 0 loss 0.011880 390.7 s
+qat int8 seed 2 epoch 1 loss 0.011873 393.5 s
+qat int8 seed 2 epoch 2 loss 0.011921 381.0 s

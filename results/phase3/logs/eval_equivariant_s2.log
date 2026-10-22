@@ -1,0 +1,7 @@
+equivariant 2 equivariance deviation 8.58306884765625e-06
+equivariant 2 plain val {'sdr50': 0.9381434614770114, 't0.5': 0.5, 'best': 0.99}
+equivariant 2 5 plain {'sdr50': 617, 't0.5': 1262, 'best': 615} mwpm 615
+equivariant 2 7 plain {'sdr50': 334, 't0.5': 832, 'best': 276} mwpm 276
+equivariant 2 9 plain {'sdr50': 170, 't0.5': 464, 'best': 128} mwpm 128
+equivariant 2 11 plain {'sdr50': 32, 't0.5': 110, 'best': 17} mwpm 17
+equivariant 2 13 plain {'sdr50': 18, 't0.5': 72, 'best': 6} mwpm 6

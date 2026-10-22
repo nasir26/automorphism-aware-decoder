@@ -1,0 +1,119 @@
+{
+ "precision": "int8",
+ "seed": 0,
+ "d": 5,
+ "p": 0.006,
+ "epochs": 3,
+ "shots_per_epoch": 500000,
+ "batch": 256,
+ "lr": 0.0001,
+ "model": {
+  "offsets": [
+   [
+    -1,
+    -1,
+    1
+   ],
+   [
+    -1,
+    0,
+    0
+   ],
+   [
+    -1,
+    0,
+    2
+   ],
+   [
+    -1,
+    1,
+    1
+   ],
+   [
+    0,
+    -1,
+    -1
+   ],
+   [
+    0,
+    -1,
+    1
+   ]
+  ],
+  "depth": 2,
+  "width": 64,
+  "equivariant": false
+ },
+ "fp32": {
+  "arm": "baseline",
+  "seed": 0,
+  "d": 5,
+  "rounds": 5,
+  "p": 0.006,
+  "basis": "Z",
+  "family": "stim",
+  "epochs": 20,
+  "shots_per_epoch": 2000000,
+  "batch": 256,
+  "chunk": 100000,
+  "lr": 0.001,
+  "torch_threads": 28,
+  "model": {
+   "offsets": [
+    [
+     -1,
+     -1,
+     1
+    ],
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     -1,
+     0,
+     2
+    ],
+    [
+     -1,
+     1,
+     1
+    ],
+    [
+     0,
+     -1,
+     -1
+    ],
+    [
+     0,
+     -1,
+     1
+    ]
+   ],
+   "depth": 2,
+   "width": 64,
+   "equivariant": false
+  },
+  "n_parameters_free": 118983,
+  "tier": "T4-SIM"
+ },
+ "tier": "T4-SIM",
+ "history": [
+  {
+   "epoch": 0,
+   "loss": 0.011751566482398211,
+   "seconds": 385.2
+  },
+  {
+   "epoch": 1,
+   "loss": 0.01171367828712782,
+   "seconds": 387.2
+  },
+  {
+   "epoch": 2,
+   "loss": 0.011729425647774773,
+   "seconds": 383.4
+  }
+ ]
+}

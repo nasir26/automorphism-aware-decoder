@@ -1,0 +1,13 @@
+baseline 2 equivariance deviation 20.268529891967773
+baseline 2 plain val {'sdr50': 0.9515472953207791, 't0.5': 0.5, 'best': 0.99}
+baseline 2 tts val {'sdr50': 0.9456035201437771, 't0.5': 0.5, 'best': 0.99}
+baseline 2 5 plain {'sdr50': 626, 't0.5': 1180, 'best': 615} mwpm 615
+baseline 2 5 tts {'sdr50': 618, 't0.5': 1287, 'best': 615} mwpm 615
+baseline 2 7 plain {'sdr50': 333, 't0.5': 835, 'best': 276} mwpm 276
+baseline 2 7 tts {'sdr50': 321, 't0.5': 811, 'best': 275} mwpm 276
+baseline 2 9 plain {'sdr50': 166, 't0.5': 442, 'best': 129} mwpm 128
+baseline 2 9 tts {'sdr50': 167, 't0.5': 460, 'best': 129} mwpm 128
+baseline 2 11 plain {'sdr50': 33, 't0.5': 108, 'best': 17} mwpm 17
+baseline 2 11 tts {'sdr50': 37, 't0.5': 108, 'best': 17} mwpm 17
+baseline 2 13 plain {'sdr50': 13, 't0.5': 77, 'best': 8} mwpm 6
+baseline 2 13 tts {'sdr50': 14, 't0.5': 69, 'best': 7} mwpm 6

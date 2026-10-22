@@ -34,3 +34,28 @@
 - Automorphism ensemble decoding was evaluated with a group of order 2 and an exact matcher, where it
   cannot gain by construction; it says nothing about ensembles of approximate decoders, which is
   where AutDEC applies it.
+
+## Phase 3
+
+- One budget only: width 64, depth 2, 20 epochs of 2,000,000 shots at p = 0.006, trained at d = 5,
+  CPU. A larger model or budget could change the comparison with PyMatching; the null is stated for
+  this budget.
+- One circuit family (Stim rotated memory, uniform depolarizing), one basis (Z), one test p (0.003).
+- Every model is applied with a single threshold chosen at d = 5. At larger d the ratio to PyMatching
+  alone grows (about 3 at d = 13), so the pre-decoder's local errors are not removed by retraining or
+  rethresholding per d; that was not tried.
+- The equivariant arm's syndrome density reduction falls with d (0.50 at d = 5 to 0.44 at d = 13),
+  while the other arms stay at 0.50 to 0.53; it applies fewer (0, -1, 1) space edges at d = 13
+  (4.0 per shot against 5.5 to 5.7). The cause is not established.
+- d = 11 and 13 have 6 to 42 failures per model; their paired comparisons are weak.
+- FP32 equivariance deviation (up to 1.1e-5) is above the prompt's 1e-6 target; the FP64 value
+  (1.8e-14) shows it is rounding, not construction.
+
+## Phase 4
+
+- QAT starts from the Phase 3 checkpoints, which do not beat PyMatching alone; Phase 4 measures how
+  much quantization costs, not a useful decoder.
+- Evaluated at d = 5 and 9 only; the augmented and TTS variants are not quantized.
+- The head accumulator reaches 2.9e10 in magnitude at INT8 (35 bits plus sign); a hardware datapath
+  needs at least that width, or a smaller head multiplier.
+- The golden model is software (T4). Nothing here has been synthesised or run on a card.

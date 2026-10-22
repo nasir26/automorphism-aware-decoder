@@ -1,0 +1,3 @@
+baseline_s0_int4 val {'sdr50': 0.955220340306332, 't0.5': 0.5, 'best': 0.99} flip 60197 mismatch {'0.5': 0, '0.9': 0}
+baseline_s0_int4 5 {'sdr50': 637, 't0.5': 1313, 'best': 615} mwpm 615
+baseline_s0_int4 9 {'sdr50': 170, 't0.5': 473, 'best': 129} mwpm 128
